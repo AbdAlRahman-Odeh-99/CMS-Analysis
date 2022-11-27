@@ -1,0 +1,198 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	flattentreesCommand
+	1	prepareCoffeaCommand
+	1	runCoffeaCommand
+	2	runpoetCommand
+	17
+
+[Sat Nov 19 22:54:15 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root
+    jobid: 24
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19419
+
+
+[Sat Nov 19 22:54:15 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root
+    jobid: 23
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19407
+
+[Sun Nov 20 00:02:58 2022]
+Finished job 24.
+1 of 17 steps (6%) done
+[Sun Nov 20 00:10:22 2022]
+Finished job 23.
+2 of 17 steps (12%) done
+
+[Sun Nov 20 00:10:22 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput_merged.root
+    jobid: 31
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19985
+
+
+[Sun Nov 20 00:10:22 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput_merged.root
+    jobid: 34
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19397
+
+
+[Sun Nov 20 00:10:22 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput_merged.root
+    jobid: 35
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19407
+
+
+[Sun Nov 20 00:10:22 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput_merged.root
+    jobid: 30
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19983
+
+[Sun Nov 20 00:10:41 2022]
+Finished job 30.
+3 of 17 steps (18%) done
+
+[Sun Nov 20 00:10:41 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput_merged.root
+    jobid: 32
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19949
+
+[Sun Nov 20 00:10:41 2022]
+Finished job 31.
+4 of 17 steps (24%) done
+
+[Sun Nov 20 00:10:41 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root
+    jobid: 28
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24120
+
+[Sun Nov 20 00:10:41 2022]
+Finished job 35.
+5 of 17 steps (29%) done
+
+[Sun Nov 20 00:10:41 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput_merged.root
+    jobid: 33
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19999
+
+[Sun Nov 20 00:10:41 2022]
+Finished job 34.
+6 of 17 steps (35%) done
+
+[Sun Nov 20 00:10:41 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput_merged.root
+    jobid: 29
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19980
+
+[Sun Nov 20 00:10:58 2022]
+Finished job 28.
+7 of 17 steps (41%) done
+
+[Sun Nov 20 00:10:58 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput_merged.root
+    jobid: 38
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=20548
+
+[Sun Nov 20 00:11:00 2022]
+Finished job 29.
+8 of 17 steps (47%) done
+
+[Sun Nov 20 00:11:00 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput_merged.root
+    jobid: 36
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19419
+
+[Sun Nov 20 00:11:01 2022]
+Finished job 32.
+9 of 17 steps (53%) done
+
+[Sun Nov 20 00:11:01 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root
+    jobid: 27
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Sun Nov 20 00:11:01 2022]
+Finished job 33.
+10 of 17 steps (59%) done
+
+[Sun Nov 20 00:11:01 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput_merged.root
+    jobid: 37
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19412
+
+[Sun Nov 20 00:11:16 2022]
+Finished job 38.
+11 of 17 steps (65%) done
+[Sun Nov 20 00:11:20 2022]
+Finished job 36.
+12 of 17 steps (71%) done
+[Sun Nov 20 00:11:20 2022]
+Finished job 27.
+13 of 17 steps (76%) done
+[Sun Nov 20 00:11:20 2022]
+Finished job 37.
+14 of 17 steps (82%) done
+
+[Sun Nov 20 00:11:20 2022]
+rule prepareCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput_merged.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    jobid: 39
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Sun Nov 20 00:11:32 2022]
+Finished job 39.
+15 of 17 steps (88%) done
+
+[Sun Nov 20 00:11:32 2022]
+rule runCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/histograms.root
+    jobid: 40
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Sun Nov 20 00:13:28 2022]
+Finished job 40.
+16 of 17 steps (94%) done
+
+[Sun Nov 20 00:13:28 2022]
+localrule all:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt, .mkdir.chkpnt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/histograms.root
+    jobid: 0
+
+[Sun Nov 20 00:13:28 2022]
+Finished job 0.
+17 of 17 steps (100%) done
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-19T225415.796062.snakemake.log

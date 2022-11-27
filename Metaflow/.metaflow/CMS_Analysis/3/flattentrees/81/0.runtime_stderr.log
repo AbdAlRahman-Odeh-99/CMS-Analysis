@@ -1,0 +1,34 @@
+[MFLOG|0|2022-10-21T20:48:20.144145Z|runtime|1e48c388-5896-4161-aa17-40f7e8d6b294][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-10-21T20:48:22.712637Z|runtime|b2d188f0-54c6-46be-af27-ab3aa0ba2b1a]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T20:48:22.712831Z|runtime|c624b91d-f194-42c8-802a-b75326db2993]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/sidecar_worker.py", line 14, in <module>
+[MFLOG|0|2022-10-21T20:48:22.712969Z|runtime|aff11c9d-7564-462a-bcd6-2786eadd5b28]    from metaflow.sidecar_messages import MessageTypes, deserialize
+[MFLOG|0|2022-10-21T20:48:22.713098Z|runtime|9e93a95e-936d-4d94-9c3c-4ef23c315277]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/__init__.py", line 96, in <module>
+[MFLOG|0|2022-10-21T20:48:22.713212Z|runtime|2b596f9c-4908-4cff-9e28-d00ccb905bcd]    from .event_logger import EventLogger
+[MFLOG|0|2022-10-21T20:48:22.713320Z|runtime|aadb71a0-0f7f-4989-bd8a-35668cad3267]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/event_logger.py", line 1, in <module>
+[MFLOG|0|2022-10-21T20:48:22.713425Z|runtime|bb582e29-fc9f-4f88-9ebd-b4add53b48d6]    from .sidecar import SidecarSubProcess
+[MFLOG|0|2022-10-21T20:48:22.713532Z|runtime|86365d99-f60f-4fab-89d0-02d9bdebffbb]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/sidecar.py", line 14, in <module>
+[MFLOG|0|2022-10-21T20:48:22.713653Z|runtime|3c79adad-8ae5-4d54-8476-70dea1f4a945]    from .debug import debug
+[MFLOG|0|2022-10-21T20:48:22.713776Z|runtime|174e7a35-8436-4557-8be2-54d7696f1893]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/debug.py", line 46, in <module>
+[MFLOG|0|2022-10-21T20:48:22.713905Z|runtime|b19952cc-708e-4f76-9e2b-4da052192d1d]    debug = Debug()
+[MFLOG|0|2022-10-21T20:48:22.714029Z|runtime|9cad465d-1a7c-4535-bd68-41a5fa2b901b]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/debug.py", line 22, in __init__
+[MFLOG|0|2022-10-21T20:48:22.714159Z|runtime|309e19de-84b1-4855-815b-b450eb96a9cf]    import metaflow.metaflow_config as config
+[MFLOG|0|2022-10-21T20:48:22.714282Z|runtime|223a2eb6-ddb6-4d5f-9c01-8d7f3b6aefea]  File "/home/abd/.local/lib/python3.8/site-packages/metaflow/metaflow_config.py", line 4, in <module>
+[MFLOG|0|2022-10-21T20:48:22.714399Z|runtime|19d882f5-d314-4632-acc5-91921067a0a0]    import pkg_resources
+[MFLOG|0|2022-10-21T20:48:22.714525Z|runtime|48c4bb70-4478-4504-843b-4f3a0793e998]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3254, in <module>
+[MFLOG|0|2022-10-21T20:48:22.714656Z|runtime|8347f288-92ab-4ef5-81ed-37c892d67dd1]    def _initialize_master_working_set():
+[MFLOG|0|2022-10-21T20:48:22.714788Z|runtime|6832910e-c3a6-4d77-ae32-e26cb35f2cb2]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3237, in _call_aside
+[MFLOG|0|2022-10-21T20:48:22.715057Z|runtime|47773ace-e65e-4039-b648-e86654ba5d8b]    f(*args, **kwargs)
+[MFLOG|0|2022-10-21T20:48:22.715186Z|runtime|b91aaa36-6f90-414d-9a76-294a15ff9408]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3289, in _initialize_master_working_set
+[MFLOG|0|2022-10-21T20:48:22.715313Z|runtime|5e02e10c-fb65-437f-b3d6-1f1f62acc63c]    list(map(working_set.add_entry, sys.path))
+[MFLOG|0|2022-10-21T20:48:22.715424Z|runtime|786ec907-8386-4f9a-a857-d150e4bd3d45]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 624, in add_entry
+[MFLOG|0|2022-10-21T20:48:22.715549Z|runtime|be765e71-0564-4215-aa4d-2020fd1c26c7]    for dist in find_distributions(entry, True):
+[MFLOG|0|2022-10-21T20:48:22.715669Z|runtime|42b17cb7-a77b-4efe-8a76-ca5ef69361cd]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2062, in find_on_path
+[MFLOG|0|2022-10-21T20:48:22.715779Z|runtime|b41717e7-bea8-4ae1-a966-043ad39be53e]    path_item_entries = _by_version_descending(filtered)
+[MFLOG|0|2022-10-21T20:48:22.715892Z|runtime|5535437c-43b6-41bc-99a8-ed9bb38b6a4d]  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2035, in _by_version_descending
+[MFLOG|0|2022-10-21T20:48:22.716014Z|runtime|251100f9-5302-44e6-b0ee-7287736a1900]    return sorted(names, key=_by_version, reverse=True)
+[MFLOG|0|2022-10-21T20:48:22.716125Z|runtime|9f35f3cb-0d85-4505-b6c3-c1c2a31d7137]  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 54, in __eq__
+[MFLOG|0|2022-10-21T20:48:22.716242Z|runtime|63099d86-c88a-4b27-94fa-61e70a060a9a]    return self._compare(other, lambda s, o: s == o)
+[MFLOG|0|2022-10-21T20:48:22.716356Z|runtime|c658dd36-6de3-4b23-bcee-b22ec26c7bd8]KeyboardInterrupt
+[MFLOG|0|2022-10-21T20:48:22.716481Z|runtime|c2eed54a-ca09-4c37-97bd-23fbaa6b3493]
+[MFLOG|0|2022-10-21T20:48:22.716604Z|runtime|a921ab54-abae-456f-b060-7baa1730204c]Aborted!
+[MFLOG|0|2022-10-21T20:48:22.718251Z|runtime|d9c79f24-e810-42aa-8b70-22e52aff2b04]Task failed.

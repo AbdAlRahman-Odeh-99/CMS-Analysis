@@ -1,0 +1,3 @@
+WildcardError in line 142 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+No values given for wildcard 'vol_path'.
+  File "/home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile", line 142, in <module>

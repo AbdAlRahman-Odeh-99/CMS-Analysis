@@ -1,0 +1,23 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fileListCommand
+	1	prepareCommand
+	1	pullCommand
+	1	runpoetCommand
+	5
+
+[Sat Nov 12 20:30:44 2022]
+rule pullCommand:
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    jobid: 1
+    wildcards: dir_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis
+
+InputFunctionException in line 185 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+TypeError: pullCommand() takes 0 positional arguments but 1 was given
+Wildcards:
+dir_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis

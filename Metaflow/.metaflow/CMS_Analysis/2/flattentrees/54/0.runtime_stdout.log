@@ -1,0 +1,12 @@
+[MFLOG|0|2022-10-21T20:46:46.889611Z|runtime|20c5aa68-3b87-4131-9adb-a1336ed9736f]The command is: 
+[MFLOG|0|2022-10-21T20:46:51.061684Z|runtime|80921765-1356-46a2-b8e6-c1f5e36ca590] 
+[MFLOG|0|2022-10-21T20:46:51.062248Z|runtime|1a3dd346-95ce-40a6-a2c8-36724d8debc0]        docker run         --rm         -i         -d         --name python-19980         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start python-19980 &&         docker exec -it python-19980 bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/flattentrees-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 19980
+[MFLOG|0|2022-10-21T20:46:51.062734Z|runtime|ef586f8f-89e1-43e5-acf2-0e1a66984b73]        
+[MFLOG|0|2022-10-21T20:46:51.063191Z|runtime|8b34657c-107b-4405-99c5-31ad6e52338f]The output is: 
+[MFLOG|0|2022-10-21T20:46:51.063662Z|runtime|44b33c67-9698-4368-9356-4584c86d7816] 6a5d1ebd08e918b1f676199e2bc61aab2a8b4f2acc1ce9a645028a87468ebbdc
+[MFLOG|0|2022-10-21T20:46:51.064123Z|runtime|d7b524f7-d252-48aa-b431-725a6121536b]python-19980
+[MFLOG|0|2022-10-21T20:46:51.064587Z|runtime|df29bf69-d39e-466f-a278-37b6ad359a9b]
+[MFLOG|0|2022-10-21T20:46:51.065036Z|runtime|52a38ec9-a82c-4813-abd5-cfd45f57bbe7]Return Code: 1
+[MFLOG|0|2022-10-21T20:46:51.065528Z|runtime|03a885a1-a854-47a1-8c39-27a7ddf3286c]The error is: 
+[MFLOG|0|2022-10-21T20:46:51.065966Z|runtime|d8403ada-3a2c-4fb5-8bac-928f27a7ec00] the input device is not a TTY
+[MFLOG|0|2022-10-21T20:46:51.066407Z|runtime|471cf8a9-f860-47b3-b545-56ff8f53374a]

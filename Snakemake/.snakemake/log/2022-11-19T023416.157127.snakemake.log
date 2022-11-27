@@ -1,0 +1,57 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	flattentreesCommand
+	1	prepareCoffeaCommand
+	1	runCoffeaCommand
+	1	runpoetCommand
+	5
+
+[Sat Nov 19 02:34:16 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root
+    jobid: 4
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24120
+
+[Sat Nov 19 03:12:26 2022]
+Finished job 4.
+1 of 5 steps (20%) done
+
+[Sat Nov 19 03:12:26 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root
+    jobid: 5
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24120
+
+[Sat Nov 19 03:12:40 2022]
+Finished job 5.
+2 of 5 steps (40%) done
+
+[Sat Nov 19 03:12:40 2022]
+rule prepareCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    jobid: 6
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Sat Nov 19 03:12:42 2022]
+Error in rule prepareCoffeaCommand:
+    jobid: 6
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    shell:
+        
+        
+        docker run         -i         -d         --name prepare-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Snakemake/CMS-Analysis,target=/home/abd/Desktop/Work/Snakemake/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start prepare-coffea &&         docker exec prepare-coffea bash /home/abd/Desktop/Work/Snakemake/CMS-Analysis/shell-scripts/Bash/preparecoffea-bash.sh /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol &&         docker stop prepare-coffea &&         docker rm prepare-coffea
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-19T023416.157127.snakemake.log

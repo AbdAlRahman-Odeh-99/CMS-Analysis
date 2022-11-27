@@ -1,0 +1,15 @@
+[MFLOG|0|2022-10-21T01:29:46.438129Z|runtime|46623993-5fe6-48a8-b524-a658370a28e9]The command is: 
+[MFLOG|0|2022-10-21T01:29:47.546875Z|runtime|a5344364-565b-4c54-804d-507fefd1b43e] 
+[MFLOG|0|2022-10-21T01:29:47.548772Z|runtime|9ea64b3d-7bc4-4f14-9ad7-3a4489ad8fcf]        docker run         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+[MFLOG|0|2022-10-21T01:29:47.549515Z|runtime|58559532-f829-4e38-9f5c-f25bb04bddee]        
+[MFLOG|0|2022-10-21T01:29:47.550249Z|runtime|5bd88dd1-8f52-4a93-9361-85322e47bc15]The output is: 
+[MFLOG|0|2022-10-21T01:29:47.550412Z|runtime|e7858307-005c-4bae-a194-47f54ab99b52] pip install vector hist mplhep coffea
+[MFLOG|0|2022-10-21T01:29:47.550559Z|runtime|38b71b66-cfcb-4c03-8892-2f46ed9d1788]git clone https://github.com/cms-opendata-workshop/workshop2022-lesson-ttbarljetsanalysis-payload.git
+[MFLOG|0|2022-10-21T01:29:47.550690Z|runtime|453247d6-c5fd-43d8-a3ff-796587afbc90]cd workshop2022-lesson-ttbarljetsanalysis-payload
+[MFLOG|0|2022-10-21T01:29:47.550818Z|runtime|f64135ae-6f7c-42a9-a680-0a5ec8c72418]cp /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/ntuples.json .
+[MFLOG|0|2022-10-21T01:29:47.550952Z|runtime|c771b5a9-f101-481e-b4d7-3b290aeee8e6]python coffeaAnalysis_ttbarljets.py
+[MFLOG|0|2022-10-21T01:29:47.551070Z|runtime|abb41d43-3b0c-45a7-9191-e8622799a390]mv *root /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T01:29:47.551189Z|runtime|e0f58249-0f55-4dfe-809f-4eb4015e5764]ubuntu
+[MFLOG|0|2022-10-21T01:29:47.551297Z|runtime|8f4923c7-97ba-4d3e-83c5-7ed210dbbf8d]ubuntu
+[MFLOG|0|2022-10-21T01:29:47.551416Z|runtime|88631397-fded-407b-bb90-0962604b45d9]
+[MFLOG|0|2022-10-21T01:29:47.551533Z|runtime|4e66d5c0-ec3a-4350-adc0-0fbd1a6ff98c]Return Code: 0

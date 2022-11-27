@@ -1,0 +1,9 @@
+The flag 'directory' used in rule runpoetCommand is only valid for outputs, not inputs.
+The flag 'directory' used in rule runpoetCommand is only valid for outputs, not inputs.
+The flag 'directory' used in rule runpoetCommand is only valid for outputs, not inputs.
+The flag 'directory' used in rule runpoetCommand is only valid for outputs, not inputs.
+Building DAG of jobs...
+ChildIOException:
+File/directory is a child to another output:
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput.root

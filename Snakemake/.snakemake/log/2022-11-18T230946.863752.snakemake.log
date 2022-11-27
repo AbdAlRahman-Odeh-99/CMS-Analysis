@@ -1,0 +1,214 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	fileListCommand
+	12	flattentreesCommand
+	1	prepareCoffeaCommand
+	1	prepareCommand
+	1	pullCommand
+	1	runCoffeaCommand
+	12	runpoetCommand
+	41
+
+[Fri Nov 18 23:09:46 2022]
+rule pullCommand:
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    jobid: 1
+    wildcards: dir_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis
+
+[Fri Nov 18 23:22:35 2022]
+Finished job 1.
+1 of 41 steps (2%) done
+
+[Fri Nov 18 23:22:35 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: .mkdir.chkpnt
+    jobid: 2
+
+Touching output file .mkdir.chkpnt.
+[Fri Nov 18 23:22:37 2022]
+Finished job 2.
+2 of 41 steps (5%) done
+
+[Fri Nov 18 23:22:37 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt
+    jobid: 5
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19980
+
+
+[Fri Nov 18 23:22:37 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt
+    jobid: 13
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19412
+
+
+[Fri Nov 18 23:22:37 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    jobid: 14
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=20548
+
+
+[Fri Nov 18 23:22:37 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt
+    jobid: 8
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19949
+
+[Fri Nov 18 23:22:41 2022]
+Finished job 13.
+3 of 41 steps (7%) done
+
+[Fri Nov 18 23:22:41 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt
+    jobid: 4
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24120
+
+[Fri Nov 18 23:22:44 2022]
+Finished job 8.
+4 of 41 steps (10%) done
+
+[Fri Nov 18 23:22:44 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt
+    jobid: 10
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19397
+
+[Fri Nov 18 23:22:48 2022]
+Finished job 5.
+5 of 41 steps (12%) done
+
+[Fri Nov 18 23:22:48 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt
+    jobid: 7
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19985
+
+[Fri Nov 18 23:22:51 2022]
+Finished job 14.
+6 of 41 steps (15%) done
+
+[Fri Nov 18 23:22:51 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt
+    jobid: 6
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19983
+
+[Fri Nov 18 23:22:51 2022]
+Finished job 10.
+7 of 41 steps (17%) done
+
+[Fri Nov 18 23:22:51 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    jobid: 3
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Fri Nov 18 23:22:52 2022]
+Finished job 4.
+8 of 41 steps (20%) done
+
+[Fri Nov 18 23:22:52 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt
+    jobid: 12
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19419
+
+[Fri Nov 18 23:22:54 2022]
+Finished job 7.
+9 of 41 steps (22%) done
+
+[Fri Nov 18 23:22:54 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt
+    jobid: 9
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19999
+
+[Fri Nov 18 23:22:54 2022]
+Finished job 12.
+10 of 41 steps (24%) done
+
+[Fri Nov 18 23:22:54 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt
+    jobid: 11
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19407
+
+[Fri Nov 18 23:22:57 2022]
+Finished job 6.
+11 of 41 steps (27%) done
+[Fri Nov 18 23:22:57 2022]
+Finished job 3.
+12 of 41 steps (29%) done
+[Fri Nov 18 23:22:57 2022]
+Finished job 9.
+13 of 41 steps (32%) done
+[Fri Nov 18 23:22:58 2022]
+Finished job 11.
+14 of 41 steps (34%) done
+
+[Fri Nov 18 23:22:58 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput.root
+    jobid: 17
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19980
+
+
+[Fri Nov 18 23:22:58 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput.root
+    jobid: 24
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19419
+
+
+[Fri Nov 18 23:22:58 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    jobid: 26
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=20548
+
+
+[Fri Nov 18 23:22:58 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24120.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19980.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19983.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19985.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19949.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19999.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19407.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19419.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19412.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_20548.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput.root
+    jobid: 20
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19949
+
+[Fri Nov 18 23:44:19 2022]
+Error in rule runpoetCommand:
+    jobid: 26
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput.root
+    shell:
+        
+        
+        docker run         --name cmssw-20548         --mount type=bind,source=/home/abd/Desktop/Work/Snakemake/CMS-Analysis,target=/home/abd/Desktop/Work/Snakemake/CMS-Analysis         cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493         bash /home/abd/Desktop/Work/Snakemake/CMS-Analysis/shell-scripts/Bash/runpoet-bash.sh /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol 2 20548 1 &&         docker stop cmssw-20548 &&         docker rm cmssw-20548
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

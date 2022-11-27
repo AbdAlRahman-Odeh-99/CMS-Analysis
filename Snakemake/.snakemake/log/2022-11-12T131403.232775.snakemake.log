@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in line 136 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+Missing input files for rule all:
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/data
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/nevents
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code

@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	flattentreesCommand
+	2
+
+[Fri Nov 18 18:42:44 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root
+    jobid: 5
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Fri Nov 18 18:43:03 2022]
+Finished job 5.
+1 of 2 steps (50%) done
+
+[Fri Nov 18 18:43:03 2022]
+localrule all:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt, .mkdir.chkpnt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root
+    jobid: 0
+
+[Fri Nov 18 18:43:03 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-18T184244.852663.snakemake.log

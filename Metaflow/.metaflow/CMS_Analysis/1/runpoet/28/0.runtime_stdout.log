@@ -1,0 +1,111 @@
+[MFLOG|0|2022-10-21T23:51:46.182004Z|runtime|1e79c01c-c8f8-4d0d-8695-0f91ca7eb22a]The command is: 
+[MFLOG|0|2022-10-21T23:51:46.182238Z|runtime|16167289-0f09-4de9-8a07-627f88d7d185] 
+[MFLOG|0|2022-10-21T23:51:46.182438Z|runtime|2620f0df-0315-4104-b6bb-9819a39df65e]        docker run         --rm         --name cmssw-19419         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/runpoet-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 2 19419 1 &&         docker stop cmssw-19419 &&         docker rm cmssw-19419
+[MFLOG|0|2022-10-21T23:51:46.182632Z|runtime|f0653856-e2c5-41d5-a402-a95f93b06289]        
+[MFLOG|0|2022-10-21T23:51:46.183136Z|runtime|6b1012df-3547-4ead-9846-5426e8fd9187]The output is: 
+[MFLOG|0|2022-10-21T23:51:46.183477Z|runtime|cfdb75cd-9c7d-4ac8-8947-262bfe3e9932] Setting up CMSSW_7_6_7
+[MFLOG|0|2022-10-21T23:51:46.183939Z|runtime|51abb2d9-250a-4028-b6ae-5b15d9bd05a7]CMSSW should now be available.
+[MFLOG|0|2022-10-21T23:51:46.185333Z|runtime|09650714-d7be-4963-a28d-2425d35ee37d]This is a standalone image for CMSSW_7_6_7 slc6_amd64_gcc493.
+[MFLOG|0|2022-10-21T23:51:46.191728Z|runtime|ed5a10a6-7822-4304-b618-273e143b33a3]inside script file
+[MFLOG|0|2022-10-21T23:51:46.191917Z|runtime|1b2ef2e1-65a5-4dd5-b4cd-ff331c3a5b3b]Setting up CMSSW_7_6_7
+[MFLOG|0|2022-10-21T23:51:46.192458Z|runtime|76ba6836-71d3-4fdf-81a4-b45be50564ae]CMSSW should now be available.
+[MFLOG|0|2022-10-21T23:51:46.193027Z|runtime|2fc37759-6bae-4712-8672-2f633726de6c]This is a standalone image for CMSSW_7_6_7 slc6_amd64_gcc493.
+[MFLOG|0|2022-10-21T23:51:46.193543Z|runtime|fc8a4296-8005-461d-889d-24fb0bb51add]>> Local Products Rules ..... started
+[MFLOG|0|2022-10-21T23:51:46.194303Z|runtime|78c75672-3145-443c-a597-6fe16fd2b2a2]>> Local Products Rules ..... done
+[MFLOG|0|2022-10-21T23:51:46.194856Z|runtime|13ab8e19-e7c7-4e29-8f1d-7335295a6875]>> Entering Package PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.195396Z|runtime|71d9b5a3-949a-4d21-887d-119289401b52]------- copying files from src/PhysObjectExtractorTool/PhysObjectExtractor/scripts -------
+[MFLOG|0|2022-10-21T23:51:46.196396Z|runtime|57523c84-729c-441d-8dc9-636bd97a47c6]>> copied merge_trees.py
+[MFLOG|0|2022-10-21T23:51:46.197153Z|runtime|c4acc50b-644d-45be-b76b-ea80ca0bd744]>> copied ntuples-gen.py
+[MFLOG|0|2022-10-21T23:51:46.197707Z|runtime|7ead0fa3-5d52-41c2-b573-81ff8e8aacc6]>> Creating project symlinks
+[MFLOG|0|2022-10-21T23:51:46.198225Z|runtime|8406fcc2-254b-4cd8-be24-4e5ea289536f]  src/PhysObjectExtractorTool/PhysObjectExtractor/python -> python/PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.198662Z|runtime|d447b174-7ebc-4a61-8a96-6b8fa95b2820]Entering library rule at PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.199071Z|runtime|6cbaa575-5a14-4233-82f1-1dea84e31683]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/ElectronAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.199473Z|runtime|56abcbbf-d020-43eb-b367-3005b5b0741a]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/FatjetAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.199891Z|runtime|16ebc134-8a2d-4ec4-8700-8bc99b1b5c6d]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/GenParticleAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.200395Z|runtime|ea5ac4e0-2b9d-4e07-853b-50187c816c4e]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/JetAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.200650Z|runtime|63344293-e025-41e2-a3ae-6b5ed1accad3]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/MetAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.212061Z|runtime|23216c8b-a554-4129-8329-975809f737c8]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/MuonAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.215572Z|runtime|f02323f9-b751-4ded-b175-0daa971f8699]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/PhotonAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.219042Z|runtime|f8b31257-4823-4b5b-9c26-ebd0f3218845]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/SimpleEleMuFilter.cc 
+[MFLOG|0|2022-10-21T23:51:46.221137Z|runtime|8b3a50b2-1462-4e3e-8471-34cb2c5a318e]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/SimpleTriggerAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.225085Z|runtime|4aadc7bd-e73d-4087-a88c-2e59b4223b27]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/TauAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.225347Z|runtime|0fab482e-0dc1-4364-a443-8512173e338e]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/TriggObjectAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.225513Z|runtime|1324233f-2f9f-42a4-a2c2-6566b37515e6]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/TriggerAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.225655Z|runtime|97c78b6b-14d4-422c-a211-00a50e7f5f41]>> Compiling edm plugin /code/CMSSW_7_6_7/src/PhysObjectExtractorTool/PhysObjectExtractor/src/VertexAnalyzer.cc 
+[MFLOG|0|2022-10-21T23:51:46.225786Z|runtime|6bfbff6f-41e6-4e61-bdbb-a9316e926099]>> Building edm plugin tmp/slc6_amd64_gcc493/src/PhysObjectExtractorTool/PhysObjectExtractor/src/PhysObjectExtractorToolPhysObjectExtractor/libPhysObjectExtractorToolPhysObjectExtractor.so
+[MFLOG|0|2022-10-21T23:51:46.225915Z|runtime|9c56cbb3-0451-437c-a52b-89a296b2aed3]Leaving library rule at PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.226040Z|runtime|9fa54d52-74f1-45c2-ad2a-c358126ed330]@@@@ Running edmWriteConfigs for PhysObjectExtractorToolPhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.226163Z|runtime|d4536802-d616-458d-9b38-c955b5e2b979]--- Registered EDM Plugin: PhysObjectExtractorToolPhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.226286Z|runtime|6c0b2143-950b-4456-84b8-87768b4f5e58]>> Leaving Package PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.226408Z|runtime|7e7193f4-43fe-4fd5-90c9-c4b04cd5d835]>> Package PhysObjectExtractorTool/PhysObjectExtractor built
+[MFLOG|0|2022-10-21T23:51:46.226531Z|runtime|05c2a40c-74fa-41bc-ad9e-ba75254a9be5]>> Local Products Rules ..... started
+[MFLOG|0|2022-10-21T23:51:46.226659Z|runtime|4fb1c6c4-6240-4dde-9a58-838c2333548b]>> Local Products Rules ..... done
+[MFLOG|0|2022-10-21T23:51:46.226781Z|runtime|0bf42560-a9d6-4ca8-82cc-aeec6e8c7bdb]gmake[1]: Entering directory `/code/CMSSW_7_6_7'
+[MFLOG|0|2022-10-21T23:51:46.226904Z|runtime|c63c717b-3ea6-49fa-83ed-9277feda8d09]>> Creating project symlinks
+[MFLOG|0|2022-10-21T23:51:46.227027Z|runtime|81ae9677-350c-459f-9924-b8db06d96174]  src/PhysObjectExtractorTool/PhysObjectExtractor/python -> python/PhysObjectExtractorTool/PhysObjectExtractor
+[MFLOG|0|2022-10-21T23:51:46.227150Z|runtime|91fc8fed-d313-49d3-b9b2-2438e29fba3b]>> Done python_symlink
+[MFLOG|0|2022-10-21T23:51:46.227273Z|runtime|fa6483a0-ac9b-4d63-b877-83bb51603b07]>> Compiling python modules python
+[MFLOG|0|2022-10-21T23:51:46.227396Z|runtime|96089a96-bfbc-495a-9e57-a8c1f2b46253]>> Compiling python modules src/PhysObjectExtractorTool/PhysObjectExtractor/python
+[MFLOG|0|2022-10-21T23:51:46.227518Z|runtime|c729e736-2255-4c09-97af-d9b0ba02f0c9]>> All python modules compiled
+[MFLOG|0|2022-10-21T23:51:46.227636Z|runtime|8e5a8a35-4fc5-4f3b-a741-d8963da54f0a]@@@@ Refreshing Plugins:edmPluginRefresh
+[MFLOG|0|2022-10-21T23:51:46.232110Z|runtime|fba1e4d8-4268-466d-b258-57fb9d39b2c3]>> Pluging of all type refreshed.
+[MFLOG|0|2022-10-21T23:51:46.233527Z|runtime|acb4aa12-8f6f-422b-baf8-c5053177a232]>> Done generating edm plugin poisoned information
+[MFLOG|0|2022-10-21T23:51:46.252689Z|runtime|6bacbe97-424c-4315-a29a-35fab230ccad]gmake[1]: Leaving directory `/code/CMSSW_7_6_7'
+[MFLOG|0|2022-10-21T23:51:46.252898Z|runtime|e0a24e45-25d5-40f0-b8aa-261cabf4d5c4]2
+[MFLOG|0|2022-10-21T23:51:46.254385Z|runtime|6d00a9e4-3563-415b-8b60-5f8fdf42b65c]# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+[MFLOG|0|2022-10-21T23:51:46.254619Z|runtime|8ffa7b59-258c-4b74-a7b7-6000c263b68c]HLTConfig has changed for this Run. . . 
+[MFLOG|0|2022-10-21T23:51:46.254863Z|runtime|132d1000-504d-4a2b-838f-d67fd9a058bf]TrackerParametersESModule::produce(const PTrackerParametersRcd& iRecord)
+[MFLOG|0|2022-10-21T23:51:46.256331Z|runtime|15a5076f-c9b3-41a7-a47b-ae5b3122603a]36000
+[MFLOG|0|2022-10-21T23:51:46.256568Z|runtime|85175400-cff5-40d7-ada8-2048984ad188]36000
+[MFLOG|0|2022-10-21T23:51:46.256742Z|runtime|c9ce25e3-ac09-40a2-9f1f-b0bf17795dca]
+[MFLOG|0|2022-10-21T23:51:46.256906Z|runtime|f3dcc702-0c46-44bb-8b24-10496cd06d76]Return Code: 1
+[MFLOG|0|2022-10-21T23:51:46.257067Z|runtime|45f14590-36f9-4fb8-8a05-61d1d4e116b1]The error is: 
+[MFLOG|0|2022-10-21T23:51:46.260189Z|runtime|c352223e-167a-4652-95c5-791a7df380cb] WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+[MFLOG|0|2022-10-21T23:51:46.260436Z|runtime|3391d275-2493-4b98-99fd-2b9dc0357457]/home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/runpoet-bash.sh: line 4: cd: CMSSW_7_6_7/src: No such file or directory
+[MFLOG|0|2022-10-21T23:51:46.264316Z|runtime|51ef4c15-2001-413f-be7c-2af1e595cea1]WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+[MFLOG|0|2022-10-21T23:51:46.264697Z|runtime|34dd7996-9895-4b4c-bbed-f97b16e782ee]WARNING: There already exists /code/CMSSW_7_6_7 area for SCRAM_ARCH slc6_amd64_gcc493.
+[MFLOG|0|2022-10-21T23:51:46.264862Z|runtime|0dfee845-4a94-4ab5-857f-44a544b683aa]Cloning into 'PhysObjectExtractorTool'...
+[MFLOG|0|2022-10-21T23:51:46.265026Z|runtime|5c330036-302d-4625-a539-9af3abcb1320]22-Oct-2022 01:10:04 CEST  Initiating request to open file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root
+[MFLOG|0|2022-10-21T23:51:46.265196Z|runtime|d21007b0-6e80-4ddb-8f96-726ddf6f2e07]%MSG-w XrdAdaptor:  file_open 22-Oct-2022 01:10:05 CEST pre-events
+[MFLOG|0|2022-10-21T23:51:46.265882Z|runtime|dcf70069-235e-4738-834c-a5e66f600ab1]Data is served from cern.ch instead of original site eospublic
+[MFLOG|0|2022-10-21T23:51:46.278476Z|runtime|e28bd57f-3cc2-4b33-bf65-93e7a2db8543]%MSG
+[MFLOG|0|2022-10-21T23:51:46.279535Z|runtime|00091f0b-0aee-49ca-8cb2-01bf21b14dd9]22-Oct-2022 01:10:07 CEST  Successfully opened file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root
+[MFLOG|0|2022-10-21T23:51:46.280084Z|runtime|c799740f-a52c-4124-b5f8-11c444c7d230][2022-10-22 01:19:03.043685 +0200][Error  ][XRootD            ] [eospublic.cern.ch:1094] Unable to get the response to request kXR_open (file: /eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root?tried=st-096-hh151e2c.cern.ch,st-048-ac4f47c1.cern.ch, mode: 0660, flags: kXR_open_read kXR_async kXR_retstat )
+[MFLOG|0|2022-10-21T23:51:46.302381Z|runtime|cc57a308-c416-4c83-9634-f2b81b6c4535][2022-10-22 01:24:03.085469 +0200][Error  ][XRootD            ] [eospublic.cern.ch:1094] Unable to get the response to request kXR_open (file: /eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root?tried=st-096-hh151e2c.cern.ch,st-048-ac4f47c1.cern.ch, mode: 0660, flags: kXR_open_read kXR_async kXR_retstat )
+[MFLOG|0|2022-10-21T23:51:46.304054Z|runtime|b2585271-70fa-49f3-b6cd-2dde7ac817c3][2022-10-22 01:28:55.002930 +0200][Error  ][XRootD            ] [eospublic.cern.ch:1094] Unable to get the response to request kXR_open (file: /eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root?tried=st-096-hh151e2c.cern.ch,st-048-ac4f47c1.cern.ch, mode: 0660, flags: kXR_open_read kXR_async kXR_retstat )
+[MFLOG|0|2022-10-21T23:51:46.306441Z|runtime|757294dd-37c1-4a0f-8cb7-4039545444ce]22-Oct-2022 01:45:38 CEST  Closed file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/0CAE8121-20B9-E511-A86F-002590D9D822.root
+[MFLOG|0|2022-10-21T23:51:46.308606Z|runtime|6768e92a-6952-4627-9d66-9599cb313756]22-Oct-2022 01:45:38 CEST  Initiating request to open file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/104F0605-BEB8-E511-804E-00259075D6B4.root
+[MFLOG|0|2022-10-21T23:51:46.310457Z|runtime|77886525-23bb-4565-8121-0b9d1d0cc5da]%MSG-w XrdAdaptor:  file_open 22-Oct-2022 01:45:39 CEST PostProcessEvent
+[MFLOG|0|2022-10-21T23:51:46.312026Z|runtime|3a67bcd9-1687-476d-b2ff-24a609f15859]Data is served from cern.ch instead of original site eospublic
+[MFLOG|0|2022-10-21T23:51:46.314000Z|runtime|991a1648-2aea-4c3c-9c93-026e1b47963d]%MSG
+[MFLOG|0|2022-10-21T23:51:46.320625Z|runtime|677b4f51-eef6-4f8d-a227-6dfcf30449f7]22-Oct-2022 01:45:39 CEST  Successfully opened file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/104F0605-BEB8-E511-804E-00259075D6B4.root
+[MFLOG|0|2022-10-21T23:51:46.322465Z|runtime|2b953996-04e1-4195-ba2c-35d8ca16e83e][2022-10-22 01:48:49.007126 +0200][Error  ][XRootD            ] [st-048-ac4f47c1.cern.ch:1095] Unable to get the response to request kXR_close (handle: 0x00000000)
+[MFLOG|0|2022-10-21T23:51:46.327116Z|runtime|3cd82a0a-0105-4a4d-9692-32c6eb5256d1]%MSG-w XrdFileWarning:  (NoModuleName) 22-Oct-2022 01:48:49 CEST pre-events
+[MFLOG|0|2022-10-21T23:51:46.329284Z|runtime|9a02d762-5c88-4678-b578-284aa5ddf816]Source delayed close failed with error '[ERROR] Socket error' (errno=0, code=102, server=st-048-ac4f47c1.cern.ch:1095, site=cern.ch)
+[MFLOG|0|2022-10-21T23:51:46.331394Z|runtime|9fe836e6-4b9a-410f-b39d-9bb3d44715f6]%MSG
+[MFLOG|0|2022-10-21T23:51:46.355590Z|runtime|855832d2-4490-41da-8fed-fb096cb52c31]22-Oct-2022 01:51:37 CEST  Closed file root://eospublic.cern.ch//eos/opendata/cms/mc/RunIIFall15MiniAODv2/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/MINIAODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/104F0605-BEB8-E511-804E-00259075D6B4.root
+[MFLOG|0|2022-10-21T23:51:46.355824Z|runtime|b47b77e6-b308-4920-be32-24d85f99d718]
+[MFLOG|0|2022-10-21T23:51:46.355963Z|runtime|73e0bd7e-75cd-498b-a18f-7aa2f2c4bcab]=============================================
+[MFLOG|0|2022-10-21T23:51:46.356080Z|runtime|78ba8762-0f5b-483f-928e-839c87a41ad8]
+[MFLOG|0|2022-10-21T23:51:46.356194Z|runtime|8e346bfd-c817-4b6d-a847-b930a61366a5]MessageLogger Summary
+[MFLOG|0|2022-10-21T23:51:46.356307Z|runtime|11b4b01a-e793-4db9-b165-2289e465bb10]
+[MFLOG|0|2022-10-21T23:51:46.356418Z|runtime|7f528915-2d78-4279-9f62-1271c3ffad68] type     category        sev    module        subroutine        count    total
+[MFLOG|0|2022-10-21T23:51:46.368858Z|runtime|9ddb34da-2736-44c0-9016-195094fd84bd] ---- -------------------- -- ---------------- ----------------  -----    -----
+[MFLOG|0|2022-10-21T23:51:46.369029Z|runtime|dccb19ab-7eea-48ef-b56e-8eb61bd91c6a]    1 XrdAdaptor           -w file_open                              2        2
+[MFLOG|0|2022-10-21T23:51:46.369194Z|runtime|60babfd8-5e86-4908-9936-89de6f57350f]    2 XrdFileWarning       -w (NoModuleName)                         1        1
+[MFLOG|0|2022-10-21T23:51:47.697770Z|runtime|f570a348-b739-4770-ac58-e466e4ae3f77]    3 fileAction           -s file_close                             2        2
+[MFLOG|0|2022-10-21T23:51:47.697966Z|runtime|4a9dd0ce-d267-4f87-8bbc-0d2a071b9f20]    4 fileAction           -s file_open                              4        4
+[MFLOG|0|2022-10-21T23:51:47.698062Z|runtime|873858cc-7226-44d5-b461-05667c3272b0]
+[MFLOG|0|2022-10-21T23:51:47.698175Z|runtime|6859d6b5-f666-4a77-a23f-19d6aa6c2862] type    category    Examples: run/evt        run/evt          run/evt
+[MFLOG|0|2022-10-21T23:51:47.698277Z|runtime|865bd12a-ba1e-4be1-9c2a-75eae2908b41] ---- -------------------- ---------------- ---------------- ----------------
+[MFLOG|0|2022-10-21T23:51:47.698372Z|runtime|a986d4dd-224a-4994-aad9-8b0e46908607]    1 XrdAdaptor           pre-events       PostProcessEvent 
+[MFLOG|0|2022-10-21T23:51:47.698469Z|runtime|9eb7edfb-473c-4aa2-a911-c38b71d9e7ee]    2 XrdFileWarning       pre-events                        
+[MFLOG|0|2022-10-21T23:51:47.698566Z|runtime|7901148a-57df-4159-b520-d5c94edd1545]    3 fileAction           PostProcessEvent PostEndRun       
+[MFLOG|0|2022-10-21T23:51:47.698662Z|runtime|cde9a429-3454-47ae-8198-72adac098dae]    4 fileAction           pre-events       pre-events       PostProcessEvent
+[MFLOG|0|2022-10-21T23:51:47.698790Z|runtime|077bec10-3961-41c0-89d6-c248b6701f3c]
+[MFLOG|0|2022-10-21T23:51:47.698904Z|runtime|2a6fee57-4625-48b3-abfd-dd28a5d5aa07]Severity    # Occurrences   Total Occurrences
+[MFLOG|0|2022-10-21T23:51:47.699019Z|runtime|f9f98120-febe-4fef-9834-47e07016bdce]--------    -------------   -----------------
+[MFLOG|0|2022-10-21T23:51:47.699135Z|runtime|95f5a1af-c3de-4bf1-8ead-1b9c66b6bf18]Warning                 3                   3
+[MFLOG|0|2022-10-21T23:51:47.699233Z|runtime|0578f281-923c-4944-80dd-2d1634fb10d5]System                  6                   6
+[MFLOG|0|2022-10-21T23:51:47.699328Z|runtime|c34b97f3-f928-4fa4-ae0f-95d37ec85669]Error response from daemon: No such container: cmssw-19419
+[MFLOG|0|2022-10-21T23:51:47.699424Z|runtime|b2d3bac3-104f-4fba-b38a-72384112ee70]

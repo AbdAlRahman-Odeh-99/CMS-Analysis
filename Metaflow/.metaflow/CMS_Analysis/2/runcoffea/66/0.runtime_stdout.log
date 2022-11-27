@@ -1,0 +1,13 @@
+[MFLOG|0|2022-10-21T20:47:17.082467Z|runtime|a9a0cd17-788a-40bb-a654-963d037c6f1d]The command is: 
+[MFLOG|0|2022-10-21T20:47:18.483045Z|runtime|3d284a6e-bb42-494d-8bee-2bf3641c52a8] 
+[MFLOG|0|2022-10-21T20:47:18.483229Z|runtime|79a31401-3cfe-4ffe-90eb-0d8161d4b3b3]        docker run         --rm         -i \    
+[MFLOG|0|2022-10-21T20:47:18.483335Z|runtime|fdb8e9a3-18c1-47af-81d1-8b2e7ad1a822]        -d         --name run-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start run-coffea &&         docker exec -it run-coffea bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/commands.sh
+[MFLOG|0|2022-10-21T20:47:18.483460Z|runtime|8951f773-0eb8-41ee-bb81-2f0407a4f113]        
+[MFLOG|0|2022-10-21T20:47:18.483585Z|runtime|f9ef2a50-16da-4ee8-850f-296588c27ed4]The output is: 
+[MFLOG|0|2022-10-21T20:47:18.483710Z|runtime|88486d98-c1e4-48e2-bcc4-1a8de848ca91] 
+[MFLOG|0|2022-10-21T20:47:18.483831Z|runtime|dc38f23c-3a8a-42fc-8c38-da6e9bed7c6a]Return Code: 127
+[MFLOG|0|2022-10-21T20:47:18.483950Z|runtime|3159417c-5c74-4fec-963a-e962bb5f8ed3]The error is: 
+[MFLOG|0|2022-10-21T20:47:18.484069Z|runtime|1b89d275-706a-441a-a5e2-bc0962097ddd] docker: invalid reference format.
+[MFLOG|0|2022-10-21T20:47:18.484207Z|runtime|c284dd54-1e57-4d06-a6d8-9125dd6e8252]See 'docker run --help'.
+[MFLOG|0|2022-10-21T20:47:18.484331Z|runtime|a3779cd8-dbc0-4eaa-9f32-ed1856d5ce51]/bin/sh: 3: -d: not found
+[MFLOG|0|2022-10-21T20:47:18.484464Z|runtime|ff313a52-c0a4-40e2-9c0f-2fffee48967a]

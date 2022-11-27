@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 142 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+Wildcards in input files cannot be determined from output files:
+'dir_path'

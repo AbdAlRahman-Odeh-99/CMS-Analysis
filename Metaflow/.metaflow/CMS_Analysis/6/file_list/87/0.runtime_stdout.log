@@ -1,0 +1,7 @@
+[MFLOG|0|2022-10-21T01:45:27.143270Z|runtime|6aa45f6a-49e7-4bb4-af81-1785df71402b]The command is: 
+[MFLOG|0|2022-10-21T01:45:30.010724Z|runtime|5bbe3dec-7476-40e2-bb3c-2b9352a20782] 
+[MFLOG|0|2022-10-21T01:45:30.010960Z|runtime|35e251f8-b6e4-4450-9fd2-51437ad97601]        docker run         --rm         --name cernopendata-client-19999         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         cernopendata/cernopendata-client:0.3.0         get-file-locations --recid 19999 --protocol xrootd > /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/files_19999.txt;
+[MFLOG|0|2022-10-21T01:45:30.011118Z|runtime|f79c6f75-d2db-40ff-9fa7-4a0b4663e0a6]        
+[MFLOG|0|2022-10-21T01:45:30.011249Z|runtime|1193e6f9-f074-463c-a831-8d86648770c9]The output is: 
+[MFLOG|0|2022-10-21T01:45:30.011378Z|runtime|40b951fb-d28c-47a1-8044-c960c9ae0257] 
+[MFLOG|0|2022-10-21T01:45:30.011518Z|runtime|66c95ac2-4f99-4cb5-a244-a2b8499a0ec1]Return Code: 0

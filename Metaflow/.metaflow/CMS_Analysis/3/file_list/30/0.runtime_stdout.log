@@ -1,0 +1,86 @@
+[MFLOG|0|2022-10-21T00:58:30.975035Z|runtime|f4d12f77-d520-44cd-b529-31828ea17b02]The command is: 
+[MFLOG|0|2022-10-21T00:58:30.975712Z|runtime|9ed4f1a2-59bb-4a58-9ddf-1c9e56000a67] 
+[MFLOG|0|2022-10-21T00:58:30.979462Z|runtime|5e561b61-e2c1-4cab-ad8b-8c6ea6551fb9]        docker run         --rm         --name cernopendata-client-19983         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         cernopendata/cernopendata-client:0.3.0         get-file-locations --recid 19983 --protocol xrootd > /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/files_19983.txt;
+[MFLOG|0|2022-10-21T00:58:30.979960Z|runtime|d86d23d1-91c3-4113-bdaa-37b131699fdc]        
+[MFLOG|0|2022-10-21T00:58:30.980554Z|runtime|7a721293-1f32-4350-b47c-72d7ea40be6e]The output is: 
+[MFLOG|0|2022-10-21T00:58:30.981270Z|runtime|5121be61-0610-4436-ad4c-473dd8bbb993] 
+[MFLOG|0|2022-10-21T00:58:30.982410Z|runtime|3f64f642-98d2-4f9d-995f-69cbe09adc36]Return Code: 1
+[MFLOG|0|2022-10-21T00:58:30.983037Z|runtime|48ce8044-f623-4bac-a92a-4564d98c044c]The error is: 
+[MFLOG|0|2022-10-21T00:58:30.986966Z|runtime|1a39fe32-211e-43a3-b0d6-2a10d9587505] Traceback (most recent call last):
+[MFLOG|0|2022-10-21T00:58:30.989178Z|runtime|07b00d71-ec1d-4828-8c0e-f6af5e15f9b5]  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+[MFLOG|0|2022-10-21T00:58:30.990275Z|runtime|c2cfe6d4-3495-48d6-8a22-176682313661]    conn = connection.create_connection(
+[MFLOG|0|2022-10-21T00:58:30.990882Z|runtime|03d26bd3-35e5-463d-8672-3f816b4bc54d]  File "/usr/local/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[MFLOG|0|2022-10-21T00:58:30.991400Z|runtime|51cbff85-2b2e-4795-8d7c-9f3f70d5da05]    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[MFLOG|0|2022-10-21T00:58:30.991783Z|runtime|e0d56917-9529-4952-accb-5354cc3cb619]  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+[MFLOG|0|2022-10-21T00:58:30.992230Z|runtime|f5d38613-dfdd-42c6-9fdb-d811385c54a3]    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[MFLOG|0|2022-10-21T00:58:30.992621Z|runtime|c23b00e0-176d-493a-881c-bd22865e3dda]socket.gaierror: [Errno -3] Temporary failure in name resolution
+[MFLOG|0|2022-10-21T00:58:30.993055Z|runtime|3755b469-a427-4d25-988b-fae357e8b3c2]
+[MFLOG|0|2022-10-21T00:58:30.993549Z|runtime|8fafcd92-8049-4de2-bbf7-17c9b75dff48]During handling of the above exception, another exception occurred:
+[MFLOG|0|2022-10-21T00:58:30.994114Z|runtime|a92606ed-b4e5-4cf2-9f48-d5b93b35b808]
+[MFLOG|0|2022-10-21T00:58:30.994558Z|runtime|c1f9490b-11a4-44cc-a7b4-0f36bb18697f]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T00:58:30.995039Z|runtime|b70d0ce6-89db-4552-b9fd-78c55a460270]  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+[MFLOG|0|2022-10-21T00:58:30.995534Z|runtime|ed33fc74-fce8-4477-bfa6-7c664266fdf5]    httplib_response = self._make_request(
+[MFLOG|0|2022-10-21T00:58:30.996053Z|runtime|605c88b1-d237-49b7-a22b-67755a4863c9]  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+[MFLOG|0|2022-10-21T00:58:30.996598Z|runtime|0146e75f-d298-45cb-b11f-6acb0adc0277]    conn.request(method, url, **httplib_request_kw)
+[MFLOG|0|2022-10-21T00:58:30.997470Z|runtime|ee6a6d66-3f11-4896-b472-88af2389a96d]  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+[MFLOG|0|2022-10-21T00:58:30.998002Z|runtime|8e721a75-75ac-45c6-a62f-1a29f123a546]    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+[MFLOG|0|2022-10-21T00:58:30.998708Z|runtime|ee8e5e7d-f5e2-46e3-b4f8-0319ffea6e62]  File "/usr/lib64/python3.10/http/client.py", line 1282, in request
+[MFLOG|0|2022-10-21T00:58:30.999254Z|runtime|7ebe7200-80dc-453e-bcf7-d7088353b945]    self._send_request(method, url, body, headers, encode_chunked)
+[MFLOG|0|2022-10-21T00:58:30.999808Z|runtime|c4c7a36f-4554-4b73-8de8-c5f3c0abce93]  File "/usr/lib64/python3.10/http/client.py", line 1328, in _send_request
+[MFLOG|0|2022-10-21T00:58:31.000368Z|runtime|432e2273-33bf-493a-bcf5-5c7ad3ffee96]    self.endheaders(body, encode_chunked=encode_chunked)
+[MFLOG|0|2022-10-21T00:58:31.000910Z|runtime|ffa97d04-c18f-4257-8453-7f0093fb35de]  File "/usr/lib64/python3.10/http/client.py", line 1277, in endheaders
+[MFLOG|0|2022-10-21T00:58:31.001451Z|runtime|3a6220eb-34b3-448a-b1fe-1a9d6bf8dab0]    self._send_output(message_body, encode_chunked=encode_chunked)
+[MFLOG|0|2022-10-21T00:58:31.001978Z|runtime|58a36622-5dff-484b-aaeb-72dd17d355e4]  File "/usr/lib64/python3.10/http/client.py", line 1037, in _send_output
+[MFLOG|0|2022-10-21T00:58:31.002604Z|runtime|ed1622bf-400d-42a6-8601-7e568cac6c04]    self.send(msg)
+[MFLOG|0|2022-10-21T00:58:31.003132Z|runtime|a2ed197c-c92c-41ff-a313-046482cab95e]  File "/usr/lib64/python3.10/http/client.py", line 975, in send
+[MFLOG|0|2022-10-21T00:58:31.003538Z|runtime|f1db0eec-1d3e-4968-803c-90d7be533cdd]    self.connect()
+[MFLOG|0|2022-10-21T00:58:31.004132Z|runtime|50d41757-bfaa-48b7-9102-46b6b8763aa5]  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+[MFLOG|0|2022-10-21T00:58:31.005682Z|runtime|f958c591-8efd-425d-85ce-47d879a80d65]    conn = self._new_conn()
+[MFLOG|0|2022-10-21T00:58:31.006196Z|runtime|9d053c99-5592-4d1d-807b-ccd9a1df029f]  File "/usr/local/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+[MFLOG|0|2022-10-21T00:58:31.006524Z|runtime|7eaadcd5-14f8-4d07-8c3f-745a2fb67808]    raise NewConnectionError(
+[MFLOG|0|2022-10-21T00:58:31.006819Z|runtime|e6009cd6-f9e6-49ed-8052-e63411d91a1f]urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f66d7ab33a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+[MFLOG|0|2022-10-21T00:58:31.007791Z|runtime|417df0d9-ea71-4a9c-addb-a4941a1d58f8]
+[MFLOG|0|2022-10-21T00:58:31.008006Z|runtime|bc95630f-0eac-4e05-9d27-c03ee44bbed3]During handling of the above exception, another exception occurred:
+[MFLOG|0|2022-10-21T00:58:31.008264Z|runtime|0b96b906-c50c-4117-9d10-c4580f83512d]
+[MFLOG|0|2022-10-21T00:58:31.008450Z|runtime|e2e80f23-2bb6-4ecf-b22b-0a7d48eb5795]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T00:58:31.008614Z|runtime|c8fd349d-c5b5-467c-8464-581166378095]  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 440, in send
+[MFLOG|0|2022-10-21T00:58:31.008773Z|runtime|5e48ff2e-b9f7-4ffe-aa32-067bf2075049]    resp = conn.urlopen(
+[MFLOG|0|2022-10-21T00:58:31.008924Z|runtime|c482c73f-be72-4d47-974c-266e08754b33]  File "/usr/local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+[MFLOG|0|2022-10-21T00:58:31.009095Z|runtime|ad3b4298-0c23-477a-928e-38a7dc0ef6b1]    retries = retries.increment(
+[MFLOG|0|2022-10-21T00:58:31.009438Z|runtime|a43598a5-41c4-4c1b-95b2-af11b6251d80]  File "/usr/local/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+[MFLOG|0|2022-10-21T00:58:31.009845Z|runtime|fef41a21-027b-4503-ba8c-5c60f0666696]    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+[MFLOG|0|2022-10-21T00:58:31.010199Z|runtime|4fad15b1-61b5-48c1-94aa-cdca5cb5b9ac]urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='opendata.cern.ch', port=80): Max retries exceeded with url: /record/19983 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f66d7ab33a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[MFLOG|0|2022-10-21T00:58:31.010459Z|runtime|da536541-e413-4cf6-8454-1b15c89a2343]
+[MFLOG|0|2022-10-21T00:58:31.010668Z|runtime|7b63d65b-77dc-4d2e-a2a9-67477dbfa95d]During handling of the above exception, another exception occurred:
+[MFLOG|0|2022-10-21T00:58:31.010908Z|runtime|973e331c-908d-4da8-89c9-841e9c6f6929]
+[MFLOG|0|2022-10-21T00:58:31.011838Z|runtime|8de149f5-0bb9-472f-9207-da4ea553e77d]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T00:58:31.012125Z|runtime|394601a4-339f-48f4-a15a-aab07681e90d]  File "/usr/local/bin/cernopendata-client", line 8, in <module>
+[MFLOG|0|2022-10-21T00:58:31.012458Z|runtime|9c89ca4f-52ed-4df0-8dbc-093328cbeb9b]    sys.exit(cernopendata_client())
+[MFLOG|0|2022-10-21T00:58:31.012743Z|runtime|e650615c-af38-4d48-94a0-9693c908eb38]  File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1128, in __call__
+[MFLOG|0|2022-10-21T00:58:31.012982Z|runtime|9ec8bdb8-d05f-4184-bb53-7619d7605d97]    return self.main(*args, **kwargs)
+[MFLOG|0|2022-10-21T00:58:31.013286Z|runtime|eaf448ef-c75e-4189-965a-f886149c6be5]  File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1053, in main
+[MFLOG|0|2022-10-21T00:58:31.013497Z|runtime|8bd5a6db-6ad0-49ff-979e-8617092154ab]    rv = self.invoke(ctx)
+[MFLOG|0|2022-10-21T00:58:31.013713Z|runtime|508577ad-9423-4a46-a03d-b4781adf8c08]  File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1659, in invoke
+[MFLOG|0|2022-10-21T00:58:31.013994Z|runtime|7117c582-967b-43e1-b537-415170f216b7]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-10-21T00:58:31.014236Z|runtime|415cec8d-67c9-4e19-a354-4eb8b9d5317a]  File "/usr/local/lib/python3.10/site-packages/click/core.py", line 1395, in invoke
+[MFLOG|0|2022-10-21T00:58:31.014544Z|runtime|abb7859d-9b2f-449c-abf6-59e9785b42ee]    return ctx.invoke(self.callback, **ctx.params)
+[MFLOG|0|2022-10-21T00:58:31.014781Z|runtime|d5e315f4-b54a-467f-8aab-9c685143c933]  File "/usr/local/lib/python3.10/site-packages/click/core.py", line 754, in invoke
+[MFLOG|0|2022-10-21T00:58:31.015114Z|runtime|aabf7d9f-dd0f-402f-b164-c1f592e43617]    return __callback(*args, **kwargs)
+[MFLOG|0|2022-10-21T00:58:31.015310Z|runtime|545bbe9b-97b6-4be1-b36c-fe2972f23e3a]  File "/usr/local/lib/python3.10/site-packages/cernopendata_client/cli.py", line 165, in get_file_locations
+[MFLOG|0|2022-10-21T00:58:31.015674Z|runtime|c090f58a-4ffc-44ba-bfd4-5cb5cec4186d]    record_json = get_record_as_json(server, recid, doi, title)
+[MFLOG|0|2022-10-21T00:58:31.015957Z|runtime|05a9b0a6-2772-4c5f-ab4c-19c1bab6fa9a]  File "/usr/local/lib/python3.10/site-packages/cernopendata_client/searcher.py", line 159, in get_record_as_json
+[MFLOG|0|2022-10-21T00:58:36.182564Z|runtime|f1c1b9ab-533d-4820-adcf-a82eb02ce442]    record_id = verify_recid(server=server, recid=record_id)
+[MFLOG|0|2022-10-21T00:58:36.183917Z|runtime|43074d09-f053-4a5f-a0ee-625a3a3002dd]  File "/usr/local/lib/python3.10/site-packages/cernopendata_client/searcher.py", line 38, in verify_recid
+[MFLOG|0|2022-10-21T00:58:36.185517Z|runtime|a74e73ed-f892-42f7-9cb0-771ac10cf9b4]    input_record_url_check = requests.get(input_record_url)
+[MFLOG|0|2022-10-21T00:58:36.186697Z|runtime|a36f7099-4fd6-47d0-9c48-87e343a8aa41]  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 75, in get
+[MFLOG|0|2022-10-21T00:58:36.187330Z|runtime|8c736406-73e2-493e-8e2f-f4138d5d752f]    return request('get', url, params=params, **kwargs)
+[MFLOG|0|2022-10-21T00:58:36.188711Z|runtime|f4b79f39-c728-4c73-b38a-eeafb8e1e455]  File "/usr/local/lib/python3.10/site-packages/requests/api.py", line 61, in request
+[MFLOG|0|2022-10-21T00:58:36.189196Z|runtime|7449aa86-df94-4d07-94cb-77625c2826b0]    return session.request(method=method, url=url, **kwargs)
+[MFLOG|0|2022-10-21T00:58:36.189611Z|runtime|a2f82109-3b04-4288-ab4d-c878dbd4199b]  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 529, in request
+[MFLOG|0|2022-10-21T00:58:36.191294Z|runtime|5d626bf2-9175-4c03-a03b-9a481be028cc]    resp = self.send(prep, **send_kwargs)
+[MFLOG|0|2022-10-21T00:58:36.191818Z|runtime|82988155-249a-48a6-afc5-1f69bc6a135a]  File "/usr/local/lib/python3.10/site-packages/requests/sessions.py", line 645, in send
+[MFLOG|0|2022-10-21T00:58:36.192320Z|runtime|667e7b36-83b9-48ba-949e-9c8b92506d39]    r = adapter.send(request, **kwargs)
+[MFLOG|0|2022-10-21T00:58:36.192765Z|runtime|107f336d-a546-4880-be1c-3c805b3d85a2]  File "/usr/local/lib/python3.10/site-packages/requests/adapters.py", line 519, in send
+[MFLOG|0|2022-10-21T00:58:36.194475Z|runtime|f8979db3-ecb1-4201-b938-eeeef9e45e2f]    raise ConnectionError(e, request=request)
+[MFLOG|0|2022-10-21T00:58:36.194914Z|runtime|6137de5b-9fc4-469e-b47e-56947a800363]requests.exceptions.ConnectionError: HTTPConnectionPool(host='opendata.cern.ch', port=80): Max retries exceeded with url: /record/19983 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f66d7ab33a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[MFLOG|0|2022-10-21T00:58:36.195260Z|runtime|2657d6e8-f6c5-4336-92e6-d79e323dd4e5]

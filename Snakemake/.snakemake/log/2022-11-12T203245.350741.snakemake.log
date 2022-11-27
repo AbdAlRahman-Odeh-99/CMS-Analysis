@@ -1,0 +1,66 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fileListCommand
+	1	prepareCommand
+	1	pullCommand
+	1	runpoetCommand
+	5
+
+[Sat Nov 12 20:32:45 2022]
+rule pullCommand:
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    jobid: 1
+    wildcards: dir_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis
+
+[Sat Nov 12 20:32:53 2022]
+Finished job 1.
+1 of 5 steps (20%) done
+
+[Sat Nov 12 20:32:53 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: .mkdir.chkpnt
+    jobid: 2
+
+Touching output file .mkdir.chkpnt.
+[Sat Nov 12 20:32:54 2022]
+Finished job 2.
+2 of 5 steps (40%) done
+
+[Sat Nov 12 20:32:54 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    jobid: 3
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Sat Nov 12 20:32:59 2022]
+Finished job 3.
+3 of 5 steps (60%) done
+
+[Sat Nov 12 20:32:59 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    jobid: 4
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Sat Nov 12 20:32:59 2022]
+Error in rule runpoetCommand:
+    jobid: 4
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    shell:
+        
+        
+        docker run         --name cmssw-24119         --mount type=bind,source=/home/abd/Desktop/Work/Snakemake/CMS-Analysis,target=/home/abd/Desktop/Work/Snakemake/CMS-Analysis         cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493         bash /home/abd/Desktop/Work/Snakemake/CMS-Analysis/shell-scripts/Bash/runpoet-bash.sh /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol 2 24119 1 &&         docker stop cmssw-24119 &&         docker rm cmssw-24119 &&         
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-12T203245.350741.snakemake.log

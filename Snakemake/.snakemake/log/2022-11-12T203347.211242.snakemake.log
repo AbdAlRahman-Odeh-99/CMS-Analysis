@@ -1,0 +1,65 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fileListCommand
+	1	prepareCommand
+	1	pullCommand
+	1	runpoetCommand
+	5
+
+[Sat Nov 12 20:33:47 2022]
+rule pullCommand:
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    jobid: 1
+    wildcards: dir_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis
+
+[Sat Nov 12 20:33:55 2022]
+Finished job 1.
+1 of 5 steps (20%) done
+
+[Sat Nov 12 20:33:55 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: .mkdir.chkpnt
+    jobid: 2
+
+Touching output file .mkdir.chkpnt.
+[Sat Nov 12 20:33:56 2022]
+Finished job 2.
+2 of 5 steps (40%) done
+
+[Sat Nov 12 20:33:56 2022]
+rule fileListCommand:
+    input: .mkdir.chkpnt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    jobid: 3
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Sat Nov 12 20:34:01 2022]
+Finished job 3.
+3 of 5 steps (60%) done
+
+[Sat Nov 12 20:34:01 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    jobid: 4
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+[Sat Nov 12 20:59:25 2022]
+Finished job 4.
+4 of 5 steps (80%) done
+
+[Sat Nov 12 20:59:25 2022]
+localrule all:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt, .mkdir.chkpnt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    jobid: 0
+
+[Sat Nov 12 20:59:25 2022]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-12T203347.211242.snakemake.log

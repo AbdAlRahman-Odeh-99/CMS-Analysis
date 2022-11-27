@@ -1,0 +1,3 @@
+TypeError in line 6 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+can only concatenate str (not "list") to str
+  File "/home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile", line 6, in <module>

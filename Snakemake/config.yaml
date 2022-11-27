@@ -1,0 +1,29 @@
+dir_path:
+  "/home/abd/Desktop/Work/Snakemake/CMS-Analysis"
+
+vol_path:
+  "/vol"
+
+shell_scripts_path:
+  "/shell-scripts/Bash"
+
+prepare_directory_outputs:
+  - "/code"
+  - "/data"
+  - "/nevents"
+  - "/output"
+  - "/code/commands.sh"
+
+recids:
+  - "24119"
+  - "24120"
+  - "19980"
+  - "19983"
+  - "19985"
+  - "19949"
+  - "19999"
+  - "19397"
+  - "19407"
+  - "19419"
+  - "19412"
+  - "20548"

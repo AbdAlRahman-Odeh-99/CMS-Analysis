@@ -1,0 +1,20 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepareCommand
+	2
+
+[Sat Nov 12 13:20:32 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/data, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/nevents, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+    jobid: 2
+
+InputFunctionException in line 199 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+TypeError: prepareCommand() takes 0 positional arguments but 1 was given
+Wildcards:
+

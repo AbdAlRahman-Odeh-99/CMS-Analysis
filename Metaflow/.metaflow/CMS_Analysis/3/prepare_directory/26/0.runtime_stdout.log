@@ -1,0 +1,15 @@
+[MFLOG|0|2022-10-21T00:58:02.288552Z|runtime|e72a0132-cc09-41d1-bc2a-441b498b2ac0]The command is: 
+[MFLOG|0|2022-10-21T00:58:03.508308Z|runtime|91dde874-30b5-4cbb-969e-654355904c96] 
+[MFLOG|0|2022-10-21T00:58:03.509053Z|runtime|0d25d6f4-5024-4958-bd71-a01d8dc6c9fa]        docker run         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+[MFLOG|0|2022-10-21T00:58:03.509660Z|runtime|2737d23d-2df4-46a5-96d9-17278b11a7f1]        
+[MFLOG|0|2022-10-21T00:58:03.510008Z|runtime|1679af17-7f82-4f87-8224-091de4514337]The output is: 
+[MFLOG|0|2022-10-21T00:58:03.510181Z|runtime|e07d3125-20eb-455b-952a-dcb33803aec1] pip install vector hist mplhep coffea
+[MFLOG|0|2022-10-21T00:58:03.510312Z|runtime|7b361fd8-2424-4d02-b691-db958e8928cb]git clone https://github.com/cms-opendata-workshop/workshop2022-lesson-ttbarljetsanalysis-payload.git
+[MFLOG|0|2022-10-21T00:58:03.510428Z|runtime|e9aa6899-0fdd-4356-afe4-28288815862a]cd workshop2022-lesson-ttbarljetsanalysis-payload
+[MFLOG|0|2022-10-21T00:58:03.510537Z|runtime|9d5bc81e-c98e-4d5d-902c-7de4d7a7b46b]cp /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/ntuples.json .
+[MFLOG|0|2022-10-21T00:58:03.510648Z|runtime|b4c638f1-a46b-45ef-bbbd-17c6f3377785]python coffeaAnalysis_ttbarljets.py
+[MFLOG|0|2022-10-21T00:58:03.510758Z|runtime|4172dd15-b14b-412e-a23e-a7ba0d3a0c8a]mv *root /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T00:58:03.510863Z|runtime|88cf89b2-fc04-45e1-91f8-9e6340bfc1f9]ubuntu
+[MFLOG|0|2022-10-21T00:58:03.510968Z|runtime|14915f46-1e99-4c8c-b871-0a74d9d7de52]ubuntu
+[MFLOG|0|2022-10-21T00:58:03.511077Z|runtime|55ca6156-7c9c-4d01-999b-53b91fdea931]
+[MFLOG|0|2022-10-21T00:58:03.511188Z|runtime|cacc8172-cb5d-408c-86c0-d8dc255b3253]Return Code: 0

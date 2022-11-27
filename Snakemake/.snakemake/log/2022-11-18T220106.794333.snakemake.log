@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepareCoffeaCommand
+	1	runCoffeaCommand
+	3
+
+[Fri Nov 18 22:01:06 2022]
+rule prepareCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput_merged.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    jobid: 13
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Fri Nov 18 22:01:18 2022]
+Finished job 13.
+1 of 3 steps (33%) done
+
+[Fri Nov 18 22:01:18 2022]
+rule runCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/histograms.root
+    jobid: 14
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Fri Nov 18 22:03:18 2022]
+Finished job 14.
+2 of 3 steps (67%) done
+
+[Fri Nov 18 22:03:18 2022]
+localrule all:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24120/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19980/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19983/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19985/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19949/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19999/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19397/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19407/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19419/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/19412/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/20548/myoutput_merged.root, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/histograms.root
+    jobid: 0
+
+[Fri Nov 18 22:03:18 2022]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-18T220106.794333.snakemake.log

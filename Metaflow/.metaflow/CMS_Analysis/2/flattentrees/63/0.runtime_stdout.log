@@ -1,0 +1,15 @@
+[MFLOG|0|2022-10-21T20:47:04.676306Z|runtime|6bcd4024-e82f-4129-b138-b2cac1e0878b]The command is: 
+[MFLOG|0|2022-10-21T20:47:09.089898Z|runtime|7c75b6e0-9eea-4f33-a41a-7a67d340d2b9] 
+[MFLOG|0|2022-10-21T20:47:09.093352Z|runtime|7dfab290-5fec-4861-adf4-3e2762d700d8]        docker run         --rm         -i         -d         --name python-20548         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start python-20548 &&         docker exec -it python-20548 bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/flattentrees-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 20548
+[MFLOG|0|2022-10-21T20:47:09.093945Z|runtime|9bcb7239-d5fb-44eb-86cc-dbbe5b72bfed]        
+[MFLOG|0|2022-10-21T20:47:09.094484Z|runtime|26aebd9a-e351-4b82-8c8d-ac6ba4eeec8b]The output is: 
+[MFLOG|0|2022-10-21T20:47:09.096142Z|runtime|36fd63b6-8ae4-4699-a11a-ed70b7c13f1d] 471a49e877f7867d985fd8ebb8ab3b3105b3074386479ba536417906e63c40e2
+[MFLOG|0|2022-10-21T20:47:09.096753Z|runtime|ca6bd745-2659-4d0a-9037-446671dd5589]python-20548
+[MFLOG|0|2022-10-21T20:47:09.097266Z|runtime|f17094d1-97ac-4a56-a0cc-f2ad21a00bbf]
+[MFLOG|0|2022-10-21T20:47:09.097766Z|runtime|7104a5c5-26aa-4d87-9473-ed97c27357c5]Return Code: 1
+[MFLOG|0|2022-10-21T20:47:09.101583Z|runtime|2c48aaa3-b579-4d66-b144-9f8fd4c65c8c]The error is: 
+[MFLOG|0|2022-10-21T20:47:09.102292Z|runtime|613a5949-3c49-44be-925b-ad839dcb6fb2] the input device is not a TTY
+[MFLOG|0|2022-10-21T20:47:09.103664Z|runtime|4f47fe09-a78d-4c1f-862d-22e788da35de]
+[MFLOG|0|2022-10-21T20:47:09.104615Z|runtime|4ef61489-9ab6-4e75-aa37-91e04c0d24fc]Card render failed with error : 
+[MFLOG|0|2022-10-21T20:47:09.329729Z|runtime|4cc95386-8a47-45cd-8ac2-296f4b94b215]
+[MFLOG|0|2022-10-21T20:47:09.331084Z|runtime|f583407a-7887-4efd-aff1-43841fdbd001] 

@@ -1,0 +1,15 @@
+[MFLOG|0|2022-10-21T01:45:10.073039Z|runtime|aca0af1c-58b1-4f65-a155-1b5e9a94886b]The command is: 
+[MFLOG|0|2022-10-21T01:45:11.415445Z|runtime|eeab1a81-9b20-4acc-802a-18cdd54043e1] 
+[MFLOG|0|2022-10-21T01:45:11.419260Z|runtime|2ea6719d-eb9a-4380-8af0-4575eabc24a8]        docker run         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+[MFLOG|0|2022-10-21T01:45:11.422970Z|runtime|505b8054-9c13-488e-9261-8d227f8dc822]        
+[MFLOG|0|2022-10-21T01:45:11.424076Z|runtime|eaabc2bf-5380-4342-8982-3c19645ac996]The output is: 
+[MFLOG|0|2022-10-21T01:45:11.424462Z|runtime|fbf8d31c-d26e-42ba-98b4-d8a076909b23] pip install vector hist mplhep coffea
+[MFLOG|0|2022-10-21T01:45:11.424960Z|runtime|d6df1e9d-a6cd-407f-bf90-5bc3bce737b0]git clone https://github.com/cms-opendata-workshop/workshop2022-lesson-ttbarljetsanalysis-payload.git
+[MFLOG|0|2022-10-21T01:45:11.425209Z|runtime|60fc45d6-e69a-44fb-bc43-2bd7762902dd]cd workshop2022-lesson-ttbarljetsanalysis-payload
+[MFLOG|0|2022-10-21T01:45:11.425366Z|runtime|a58bae13-1ef9-4c83-9220-816f5ef87c69]cp /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/ntuples.json .
+[MFLOG|0|2022-10-21T01:45:11.425505Z|runtime|bb9e4cd9-edc2-43d1-9019-eb14e92daa4b]python coffeaAnalysis_ttbarljets.py
+[MFLOG|0|2022-10-21T01:45:11.425710Z|runtime|6fc80a31-8819-4277-a02b-5d8b59ef5ed0]mv *root /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T01:45:11.425869Z|runtime|4530da00-a9e5-452c-8840-22f5a06925dd]ubuntu
+[MFLOG|0|2022-10-21T01:45:11.426012Z|runtime|ad5a8c3d-7a5f-4d28-b7ec-bacff9ff5b19]ubuntu
+[MFLOG|0|2022-10-21T01:45:11.426141Z|runtime|2e25cbaa-6548-4c11-b81f-3eed21317a3a]
+[MFLOG|0|2022-10-21T01:45:11.426336Z|runtime|c317cba4-8893-40da-be06-27bc6f9d697f]Return Code: 0

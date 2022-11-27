@@ -1,0 +1,15 @@
+[MFLOG|0|2022-10-21T00:55:05.905708Z|runtime|d427a5bc-700d-43e0-bb0f-6a273b20456b]The command is: 
+[MFLOG|0|2022-10-21T00:55:07.164343Z|runtime|2bdefa4d-2449-4d7d-9960-a8224f017876] 
+[MFLOG|0|2022-10-21T00:55:07.164519Z|runtime|3b88c29a-dc9f-44fe-a024-1887b9621240]        docker run         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+[MFLOG|0|2022-10-21T00:55:07.164658Z|runtime|a130dabd-c718-433c-81ca-4e5ec743e92d]        
+[MFLOG|0|2022-10-21T00:55:07.164784Z|runtime|db8dc7ba-24c2-48e5-9642-fef0caabc542]The output is: 
+[MFLOG|0|2022-10-21T00:55:07.164908Z|runtime|fee199f7-0fd3-4a00-8cdd-44895e58973f] pip install vector hist mplhep coffea
+[MFLOG|0|2022-10-21T00:55:07.165032Z|runtime|2530c310-0f5a-4cc8-b6ec-f54f76309e99]git clone https://github.com/cms-opendata-workshop/workshop2022-lesson-ttbarljetsanalysis-payload.git
+[MFLOG|0|2022-10-21T00:55:07.165147Z|runtime|01a5936b-69af-48cf-ac1a-88c941e4f495]cd workshop2022-lesson-ttbarljetsanalysis-payload
+[MFLOG|0|2022-10-21T00:55:07.165252Z|runtime|c403d56d-8754-4c4a-bfd4-8b49bafe1f4e]cp /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/ntuples.json .
+[MFLOG|0|2022-10-21T00:55:07.165386Z|runtime|fc9d578c-3c8f-4ae3-9be5-1977dafb42eb]python coffeaAnalysis_ttbarljets.py
+[MFLOG|0|2022-10-21T00:55:07.165531Z|runtime|6ef26d13-4841-49c9-9c4b-a31fa7e07194]mv *root /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T00:55:07.165713Z|runtime|667a2b35-5676-49db-90a8-807e84e50f7a]ubuntu
+[MFLOG|0|2022-10-21T00:55:07.165868Z|runtime|959ce6fe-4922-4d1b-aebe-828caf0acefa]ubuntu
+[MFLOG|0|2022-10-21T00:55:07.166007Z|runtime|82f7dcb1-68a6-40e4-8124-1605e7944eaa]
+[MFLOG|0|2022-10-21T00:55:07.166148Z|runtime|0b69b8b1-a7b0-475e-a3b3-03117c0a2d12]Return Code: 0

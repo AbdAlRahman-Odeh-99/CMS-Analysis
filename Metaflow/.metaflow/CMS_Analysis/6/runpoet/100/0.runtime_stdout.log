@@ -1,0 +1,11 @@
+[MFLOG|0|2022-10-21T01:45:54.593792Z|runtime|b529b302-d998-4459-a4a2-fc472a80f72a]The command is: 
+[MFLOG|0|2022-10-21T01:45:59.333027Z|runtime|9c1ddb83-6c22-45b5-b2d4-4f6614dd7eb0] 
+[MFLOG|0|2022-10-21T01:45:59.333322Z|runtime|9dc365ec-35f9-40e9-9fb0-57b13f28d178]        docker run         --name cmssw-19949         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/runpoet-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 2 19949 1 &&         docker stop cmssw-19949 &&         docker rm cmssw-19949
+[MFLOG|0|2022-10-21T01:45:59.333484Z|runtime|0b92ad21-3bb9-47b4-951c-560fbc6e829c]        
+[MFLOG|0|2022-10-21T01:45:59.333653Z|runtime|18ea314b-b33f-42b9-b478-925dec2864eb]The output is: 
+[MFLOG|0|2022-10-21T01:45:59.333810Z|runtime|c51d45c9-e89e-459f-a5aa-760899b4918a] 
+[MFLOG|0|2022-10-21T01:45:59.333940Z|runtime|41a2939c-7a8c-4dd0-bb05-111ce9dadcd9]Return Code: 125
+[MFLOG|0|2022-10-21T01:45:59.334065Z|runtime|b073e6a9-3767-47a6-a300-4d85ddaf8c70]The error is: 
+[MFLOG|0|2022-10-21T01:45:59.334199Z|runtime|fd1f0ab3-7447-400e-abd3-1620adf0653e] docker: Error response from daemon: Conflict. The container name "/cmssw-19949" is already in use by container "e9da121f8bdbc8ca8a63d4a069e22991dc736693e736bb7cddc5797cd5fc9853". You have to remove (or rename) that container to be able to reuse that name.
+[MFLOG|0|2022-10-21T01:45:59.334338Z|runtime|3cac3aa3-7a35-4d96-acbc-0c32af805d4b]See 'docker run --help'.
+[MFLOG|0|2022-10-21T01:45:59.334462Z|runtime|4407032e-429d-4e3f-8af6-cad51f2275df]

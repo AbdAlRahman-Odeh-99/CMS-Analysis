@@ -1,0 +1,12 @@
+[MFLOG|0|2022-10-21T20:48:19.346604Z|runtime|04db596c-ec58-4549-b623-47ebebe1e5e7]The command is: 
+[MFLOG|0|2022-10-21T20:48:20.146612Z|runtime|f40f8ef3-81a1-4f65-8304-1f67953a8f1c][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-10-21T20:48:22.710193Z|runtime|ac9465bc-4a7a-46b7-8480-b2deaf1d9850] 
+[MFLOG|0|2022-10-21T20:48:22.710313Z|runtime|1c55542f-df4b-410d-9889-85d6e22ded8d]        docker run         --rm         -i         -d         --name python-19419         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start python-19419 &&         docker exec python-19419 bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/flattentrees-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 19419
+[MFLOG|0|2022-10-21T20:48:22.710442Z|runtime|81ddb44f-c15d-41e1-8dd6-ea8e94e904b0]        
+[MFLOG|0|2022-10-21T20:48:22.710567Z|runtime|ab9d5e44-abd5-499b-b928-f88b57d1bde5]The output is: 
+[MFLOG|0|2022-10-21T20:48:22.710683Z|runtime|8953ff65-5ff1-49c5-8694-74049ae4bed5] 
+[MFLOG|0|2022-10-21T20:48:22.710805Z|runtime|79ce75c0-04c6-454f-9a8e-f8208cf25e4b]Return Code: 125
+[MFLOG|0|2022-10-21T20:48:22.710926Z|runtime|1c50c400-6763-4508-9f3e-6b6862e9ea06]The error is: 
+[MFLOG|0|2022-10-21T20:48:22.711043Z|runtime|bbc9f9da-739a-4e0a-8e7d-ad7348f408d4] docker: Error response from daemon: Conflict. The container name "/python-19419" is already in use by container "8390d4f2c3fef20f433dad754e7eac2d8e8e7b179905a43e68ded5d5ff7b867c". You have to remove (or rename) that container to be able to reuse that name.
+[MFLOG|0|2022-10-21T20:48:22.711156Z|runtime|27a2cef4-283f-4858-bb32-46e1bbc32350]See 'docker run --help'.
+[MFLOG|0|2022-10-21T20:48:22.711270Z|runtime|dbb1c2c6-91bb-4c30-9b96-9d71cc3868c9]

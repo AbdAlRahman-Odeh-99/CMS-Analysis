@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepareCommand
+	2
+
+[Sat Nov 12 19:12:56 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/commands.sh
+    jobid: 2
+
+[Sat Nov 12 19:12:57 2022]
+Error in rule prepareCommand:
+    jobid: 2
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/commands.sh
+    shell:
+        
+        
+        docker run         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Snakemake/CMS-Analysis,target=/home/abd/Desktop/Work/Snakemake/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Snakemake/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job prepareCommand since they might be corrupted:
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/commands.sh
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-12T191256.392540.snakemake.log

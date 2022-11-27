@@ -1,0 +1,12 @@
+[MFLOG|0|2022-10-21T20:47:14.239541Z|runtime|a4a14254-cab0-4957-8466-1505824ed624]The command is: 
+[MFLOG|0|2022-10-21T20:47:15.855643Z|runtime|94b29e67-8ac3-435d-b081-df0db483fd5e] 
+[MFLOG|0|2022-10-21T20:47:15.858512Z|runtime|c68b78b1-5bce-4c90-a7c5-678666846ec5]        docker run         --rm         -i         -d         --name prepare-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start prepare-coffea &&         docker exec -it prepare-coffea bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/preparecoffea-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T20:47:15.860739Z|runtime|ec694702-c884-4ab4-8ce8-fbde95c5e772]        
+[MFLOG|0|2022-10-21T20:47:15.862539Z|runtime|f5b930c0-be13-4cb9-b3c6-555d5bdac4f1]The output is: 
+[MFLOG|0|2022-10-21T20:47:15.863688Z|runtime|ad912443-5b53-44dd-878d-c6a1566fa339] 33db7c901d0766a425e1ff2133bd9588dddbcf19fec6eddc30ac0486a11c4645
+[MFLOG|0|2022-10-21T20:47:15.865499Z|runtime|a1ace9b4-53b2-42cb-bc61-869858b506ec]prepare-coffea
+[MFLOG|0|2022-10-21T20:47:15.865930Z|runtime|b7c51312-2f0e-4ef8-b15d-f0b1a39194bc]
+[MFLOG|0|2022-10-21T20:47:15.867614Z|runtime|2e507d48-99ff-437c-b16f-28ce728d6d29]Return Code: 1
+[MFLOG|0|2022-10-21T20:47:15.868034Z|runtime|79a3890a-488d-4333-b6bf-e70535cda7b1]The error is: 
+[MFLOG|0|2022-10-21T20:47:15.868682Z|runtime|67a1ff05-70c3-40eb-8aee-bcbc507f4203] the input device is not a TTY
+[MFLOG|0|2022-10-21T20:47:15.869745Z|runtime|d2df81f4-aea3-4dff-bc16-9512757cdd7d]

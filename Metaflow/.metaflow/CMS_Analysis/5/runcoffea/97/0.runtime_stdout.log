@@ -1,0 +1,202 @@
+[MFLOG|0|2022-10-21T20:54:40.209474Z|runtime|422ec329-eb4a-4b04-9f3f-c795d967e575]The command is: 
+[MFLOG|0|2022-10-21T20:54:40.210466Z|runtime|6c77efc2-9e4a-4322-8cb7-6ad1a331852f] 
+[MFLOG|0|2022-10-21T20:54:40.212052Z|runtime|cbefaf77-b03e-4dd7-b9c8-6ba88411ae71]        docker run         --rm         -i         -d         --name run-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start run-coffea &&         docker exec run-coffea bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/commands.sh
+[MFLOG|0|2022-10-21T20:54:40.212313Z|runtime|a6777bb9-6c97-4c14-aa95-1a742e672c86]        
+[MFLOG|0|2022-10-21T20:54:40.212489Z|runtime|0156800d-4009-4467-970a-d032b2b2f92d]The output is: 
+[MFLOG|0|2022-10-21T20:54:40.212659Z|runtime|8b80d9fe-f2f8-4613-a295-94583e414b2a] 0f0f141047f316c22c87b33caab319f681ce5192f0b3106a4e7cb41904f3916a
+[MFLOG|0|2022-10-21T20:54:40.212824Z|runtime|244b7a1e-072c-4ed2-83d1-297eab2eb122]run-coffea
+[MFLOG|0|2022-10-21T20:54:40.212990Z|runtime|dfb03399-94e8-49ce-989a-645117dc920b]Collecting vector
+[MFLOG|0|2022-10-21T20:54:40.213149Z|runtime|d308b30f-29ab-45fb-a354-08e637811f3a]  Downloading vector-0.10.0-py3-none-any.whl (166 kB)
+[MFLOG|0|2022-10-21T20:54:40.213307Z|runtime|a822dedf-0b0d-44a3-bbe9-21171add50ac]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.9/166.9 kB 371.2 kB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.213486Z|runtime|5ae1b7d4-2278-461b-a28f-76d29f9fe676]Collecting hist
+[MFLOG|0|2022-10-21T20:54:40.213646Z|runtime|075956fc-e7b8-4fbd-a40d-aba9eaeea227]  Downloading hist-2.6.2-py3-none-any.whl (35 kB)
+[MFLOG|0|2022-10-21T20:54:40.213810Z|runtime|fb1bfb82-8c6d-46c5-98d7-c1f10dac6470]Collecting mplhep
+[MFLOG|0|2022-10-21T20:54:40.213969Z|runtime|02fb8fa3-c5f8-4b77-8bc8-95f3de0caad9]  Downloading mplhep-0.3.26-py3-none-any.whl (34 kB)
+[MFLOG|0|2022-10-21T20:54:40.214113Z|runtime|b29274fe-35fa-445c-811f-cbf95f33d88d]Collecting coffea
+[MFLOG|0|2022-10-21T20:54:40.214273Z|runtime|948ddc37-0312-479e-af15-047a0f1d5365]  Downloading coffea-0.7.19-py2.py3-none-any.whl (196 kB)
+[MFLOG|0|2022-10-21T20:54:40.214427Z|runtime|dfc837dd-2aca-441c-87a1-d68b7746f09d]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.5/196.5 kB 797.6 kB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.214581Z|runtime|1db4a34b-9937-410e-b840-9fa50d715182]Requirement already satisfied: numpy>=1.13.3 in /usr/local/venv/lib/python3.10/site-packages (from vector) (1.23.1)
+[MFLOG|0|2022-10-21T20:54:40.214729Z|runtime|950abf3c-7f65-4541-989b-10f6b092ad4f]Requirement already satisfied: packaging>=19 in /usr/local/venv/lib/python3.10/site-packages (from vector) (21.3)
+[MFLOG|0|2022-10-21T20:54:40.214868Z|runtime|45325e55-0c5b-46a9-8d66-fe095fe1f77b]Collecting boost-histogram~=1.3.1
+[MFLOG|0|2022-10-21T20:54:40.215010Z|runtime|ae665312-8f6a-4330-9928-58e44a03af96]  Downloading boost_histogram-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+[MFLOG|0|2022-10-21T20:54:40.215144Z|runtime|435af918-e01e-4b0e-b0c1-bfa690dfc1dd]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 1.2 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.215296Z|runtime|63e38b31-59f9-4469-87de-d4634095f4bc]Collecting histoprint>=2.2.0
+[MFLOG|0|2022-10-21T20:54:40.215433Z|runtime|2109720e-f233-4385-a4be-b37d5528ce9a]  Downloading histoprint-2.4.0-py3-none-any.whl (16 kB)
+[MFLOG|0|2022-10-21T20:54:40.215571Z|runtime|29815be3-d3e4-4ada-9dcb-658228438595]Requirement already satisfied: matplotlib>=3.4 in /usr/local/venv/lib/python3.10/site-packages (from mplhep) (3.5.2)
+[MFLOG|0|2022-10-21T20:54:40.215713Z|runtime|d3424e19-5fab-4a74-9135-1177243e0db3]Collecting uhi>=0.2.0
+[MFLOG|0|2022-10-21T20:54:40.215846Z|runtime|7015d9a3-0548-4690-a186-de7a7db5073c]  Downloading uhi-0.3.2-py3-none-any.whl (10 kB)
+[MFLOG|0|2022-10-21T20:54:40.215978Z|runtime|e322e823-0310-4343-8397-19ddd70915f3]Collecting mplhep-data
+[MFLOG|0|2022-10-21T20:54:40.216106Z|runtime|33825934-7d60-4726-b0f5-16dc602af4f9]  Downloading mplhep_data-0.0.3-py3-none-any.whl (5.8 MB)
+[MFLOG|0|2022-10-21T20:54:40.216241Z|runtime|9fa9691d-b2eb-493d-8da3-9c3ae329422e]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 1.7 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.216383Z|runtime|74dfa146-94f6-415b-8044-47bdf3041b6d]Collecting lz4
+[MFLOG|0|2022-10-21T20:54:40.216587Z|runtime|b1cbd9a3-5e25-4684-ae21-1f65aa07a294]  Downloading lz4-4.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+[MFLOG|0|2022-10-21T20:54:40.216737Z|runtime|a09c5b0a-18fa-43de-a71a-a510601857d6]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 2.9 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.231624Z|runtime|cb619af4-c192-4bbd-aea8-952479d5db6e]Collecting toml>=0.10.2
+[MFLOG|0|2022-10-21T20:54:40.231844Z|runtime|7d09364a-fbd2-408a-a999-b808a5de7a4f]  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+[MFLOG|0|2022-10-21T20:54:40.232003Z|runtime|734d995d-0bb6-4e40-8575-5167aded6045]Requirement already satisfied: awkward<2,>=1.5.1 in /usr/local/venv/lib/python3.10/site-packages (from coffea) (1.8.0)
+[MFLOG|0|2022-10-21T20:54:40.232143Z|runtime|9aaf9ff3-1314-4ee7-88d2-a68c75a33e9b]Collecting tqdm>=4.27.0
+[MFLOG|0|2022-10-21T20:54:40.232274Z|runtime|6f9d6b1e-516e-461f-b520-65435b899d09]  Downloading tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+[MFLOG|0|2022-10-21T20:54:40.232424Z|runtime|92639007-9f63-4c48-aab3-1521947fbd67]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 1.6 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.232963Z|runtime|f2e0c9c2-272f-4fa7-b791-8ed93ba498ca]Collecting uproot3>=3.14.1
+[MFLOG|0|2022-10-21T20:54:40.233206Z|runtime|f361a2f6-0365-4230-a467-f99fe9ffa0d1]  Downloading uproot3-3.14.4-py3-none-any.whl (117 kB)
+[MFLOG|0|2022-10-21T20:54:40.233372Z|runtime|6523cd20-0557-4742-84ce-0c3e9fc6eee5]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.5/117.5 kB 2.8 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.233548Z|runtime|44e2fe25-e663-4b09-90b1-b6e81e6f7eb0]Collecting scipy>=1.1.0
+[MFLOG|0|2022-10-21T20:54:40.233725Z|runtime|4306661d-7808-4ee2-83c9-bb845a41affc]  Downloading scipy-1.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (33.7 MB)
+[MFLOG|0|2022-10-21T20:54:40.233890Z|runtime|faca487a-7d39-4578-affb-a5fbf00ef34c]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.7/33.7 MB 1.2 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.234049Z|runtime|f795d5ad-7e7a-46aa-8179-d4bc0f3d2689]Collecting fsspec
+[MFLOG|0|2022-10-21T20:54:40.234205Z|runtime|402cef9e-c454-4783-ba97-9af377bfaaa4]  Downloading fsspec-2022.10.0-py3-none-any.whl (138 kB)
+[MFLOG|0|2022-10-21T20:54:40.234365Z|runtime|63492f60-409f-4e2f-8700-4ea06bf32549]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.8/138.8 kB 1.7 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.234525Z|runtime|05a7bc43-c609-4fed-83bf-d105361ad23e]Collecting correctionlib>=2.0.0
+[MFLOG|0|2022-10-21T20:54:40.234672Z|runtime|b768540e-702d-41ed-aef3-c4a044855a27]  Downloading correctionlib-2.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (421 kB)
+[MFLOG|0|2022-10-21T20:54:40.234834Z|runtime|086cdaf2-fdc9-46f7-89e7-a2a47a1da218]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.0/422.0 kB 3.2 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.234998Z|runtime|a5da8c21-8820-4136-8952-c788dc855aa2]Collecting cloudpickle>=1.2.3
+[MFLOG|0|2022-10-21T20:54:40.235165Z|runtime|f77407a3-6e36-4404-9cf2-b2774a86f9be]  Downloading cloudpickle-2.2.0-py3-none-any.whl (25 kB)
+[MFLOG|0|2022-10-21T20:54:40.235331Z|runtime|1377bb84-a441-4e45-90cc-ffe6db4a08eb]Collecting cachetools
+[MFLOG|0|2022-10-21T20:54:40.235565Z|runtime|c9f1d881-dc8a-46a5-8e7a-b90edbe102e3]  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+[MFLOG|0|2022-10-21T20:54:40.236771Z|runtime|173a8f3d-4a16-43cf-adf3-30d20c0bbb5b]Collecting pandas
+[MFLOG|0|2022-10-21T20:54:40.237008Z|runtime|1f6cb7d3-aa29-4c50-b7ec-4ddd759e017c]  Downloading pandas-1.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+[MFLOG|0|2022-10-21T20:54:40.237190Z|runtime|84f7a41b-8bf9-4ebb-9313-ba265569a33c]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 2.6 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.237373Z|runtime|4db657a3-67c5-4c94-8e2b-696f22538f0f]Requirement already satisfied: uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6 in /usr/local/venv/lib/python3.10/site-packages (from coffea) (4.3.3)
+[MFLOG|0|2022-10-21T20:54:40.262191Z|runtime|01342f43-4b1b-4dd4-9a09-1e00008fb5fb]Collecting uproot3-methods>=0.10.0
+[MFLOG|0|2022-10-21T20:54:40.262436Z|runtime|9c1b5aec-7817-4371-9fb3-9cbc38226090]  Downloading uproot3_methods-0.10.1-py3-none-any.whl (32 kB)
+[MFLOG|0|2022-10-21T20:54:40.262631Z|runtime|79dbc2a5-82d6-4e4d-bf21-74be486fc294]Collecting pyarrow>=1.0.0
+[MFLOG|0|2022-10-21T20:54:40.262836Z|runtime|85b0b912-7955-44c9-bf65-4f55915118e6]  Downloading pyarrow-9.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (35.3 MB)
+[MFLOG|0|2022-10-21T20:54:40.263012Z|runtime|81594319-8ce1-476d-b6ed-05179a1b9070]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 3.0 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.263190Z|runtime|d63a0345-0b7d-4c47-bf42-44be121ef254]Collecting numba>=0.50.0
+[MFLOG|0|2022-10-21T20:54:40.263348Z|runtime|c8fc3457-b185-482f-8ef1-545c1d727f6b]  Downloading numba-0.56.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+[MFLOG|0|2022-10-21T20:54:40.263497Z|runtime|1f85478a-77e3-4166-bec0-0ec800ac072f]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 3.0 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.263652Z|runtime|2f9bed9b-a71b-4a40-8b86-693fc619dce2]Collecting numpy>=1.13.3
+[MFLOG|0|2022-10-21T20:54:40.263814Z|runtime|ac595e80-6982-4d14-9c53-2e3ae2069c0a]  Downloading numpy-1.21.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.9 MB)
+[MFLOG|0|2022-10-21T20:54:40.264010Z|runtime|90199003-119c-46f9-b6bf-a0f744568a46]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 3.3 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.264190Z|runtime|fc441b80-5af8-4f4a-bf7f-56684c6995f9]Requirement already satisfied: setuptools in /usr/local/venv/lib/python3.10/site-packages (from uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6->coffea) (63.2.0)
+[MFLOG|0|2022-10-21T20:54:40.264378Z|runtime|c628d90e-7c0b-44f8-94e2-2435eea14989]Collecting pydantic>=1.7.3
+[MFLOG|0|2022-10-21T20:54:40.264612Z|runtime|68e2478e-6de1-40b1-a9bb-42e01befc200]  Downloading pydantic-1.10.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.8 MB)
+[MFLOG|0|2022-10-21T20:54:40.264778Z|runtime|274e0776-f5f4-4124-90e1-0023506aef13]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 3.6 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.264945Z|runtime|f16425a8-9e9c-40f8-9088-cd3eb1211140]Collecting rich
+[MFLOG|0|2022-10-21T20:54:40.265106Z|runtime|713622db-697b-414d-ac8d-32c29df472e6]  Downloading rich-12.6.0-py3-none-any.whl (237 kB)
+[MFLOG|0|2022-10-21T20:54:40.266461Z|runtime|1a7a40b3-7e27-445b-a988-4d6ba6bc52ee]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.5/237.5 kB 3.5 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.266690Z|runtime|173d5455-c921-470c-81a0-bc67a831c0bc]Collecting click>=7.0.0
+[MFLOG|0|2022-10-21T20:54:40.266885Z|runtime|88b6a68b-b820-4e20-aecb-ff54de7c3dbb]  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+[MFLOG|0|2022-10-21T20:54:40.268147Z|runtime|377e9a44-772b-4002-91c3-9bebf064c266]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 3.9 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.269657Z|runtime|fe52f1d7-8cf0-4696-bebc-1d60d3dc6e56]Requirement already satisfied: pyparsing>=2.2.1 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (3.0.9)
+[MFLOG|0|2022-10-21T20:54:40.269887Z|runtime|899ffc3d-332b-4d4d-bb83-7796a44422ec]Requirement already satisfied: fonttools>=4.22.0 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (4.34.4)
+[MFLOG|0|2022-10-21T20:54:40.296796Z|runtime|19d63266-56ed-42a6-9677-7229e90e57ad]Requirement already satisfied: cycler>=0.10 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (0.11.0)
+[MFLOG|0|2022-10-21T20:54:40.297006Z|runtime|5b7d6a3b-495e-498e-85ad-1b8e140b48b8]Requirement already satisfied: python-dateutil>=2.7 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (2.8.2)
+[MFLOG|0|2022-10-21T20:54:40.297152Z|runtime|17b40311-c6a3-40b6-a320-03cdc58da369]Requirement already satisfied: pillow>=6.2.0 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (9.2.0)
+[MFLOG|0|2022-10-21T20:54:40.297292Z|runtime|559fe7bc-3c69-402c-b2b3-64a68a356cea]Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (1.4.3)
+[MFLOG|0|2022-10-21T20:54:40.297416Z|runtime|c69b06ad-a940-40bd-a31f-eeae8d533053]Collecting llvmlite<0.40,>=0.39.0dev0
+[MFLOG|0|2022-10-21T20:54:40.297549Z|runtime|74364987-fb03-435f-a7d6-b22cf280e4d4]  Downloading llvmlite-0.39.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.6 MB)
+[MFLOG|0|2022-10-21T20:54:40.297680Z|runtime|e2564f9a-1700-4c5b-9726-07da29dbe977]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.6/34.6 MB 3.1 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.297807Z|runtime|76997007-1cec-494e-9239-51db53c4ba1c]Collecting awkward0
+[MFLOG|0|2022-10-21T20:54:40.297931Z|runtime|db97addf-f1f4-4178-a625-59a90ea76029]  Downloading awkward0-0.15.5-py3-none-any.whl (87 kB)
+[MFLOG|0|2022-10-21T20:54:40.298053Z|runtime|5833fd92-8f38-45e5-ae54-e9c819b24b46]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.6/87.6 kB 1.0 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.299717Z|runtime|283a021d-9a32-4557-a37c-682a0a88f4f5]Requirement already satisfied: pytz>=2020.1 in /usr/local/venv/lib/python3.10/site-packages (from pandas->coffea) (2022.1)
+[MFLOG|0|2022-10-21T20:54:40.299956Z|runtime|eb101f84-5948-4640-9ef9-58a9f77ed5e6]Collecting typing-extensions>=4.1.0
+[MFLOG|0|2022-10-21T20:54:40.300121Z|runtime|9587f3b1-69b4-43aa-a28e-e0021bb368fa]  Downloading typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+[MFLOG|0|2022-10-21T20:54:40.304771Z|runtime|d07edb37-911c-4258-8ec9-e566d667e8b0]Requirement already satisfied: six>=1.5 in /usr/local/venv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.4->mplhep) (1.16.0)
+[MFLOG|0|2022-10-21T20:54:40.305670Z|runtime|db6f80af-0c21-4fb7-9753-c2885256a601]Collecting commonmark<0.10.0,>=0.9.0
+[MFLOG|0|2022-10-21T20:54:40.305891Z|runtime|6fd0c337-561d-41f6-8693-3c924177f397]  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+[MFLOG|0|2022-10-21T20:54:40.306585Z|runtime|7cd4dde5-934d-4396-94d7-987af1bd2498]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 2.0 MB/s eta 0:00:00
+[MFLOG|0|2022-10-21T20:54:40.314748Z|runtime|d8b565f1-1b14-456d-a88c-f208ad7dff50]Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/venv/lib/python3.10/site-packages (from rich->correctionlib>=2.0.0->coffea) (2.12.0)
+[MFLOG|0|2022-10-21T20:54:40.315000Z|runtime|0ff6eea3-82ec-4521-9cc8-d3ebe6dd27c0]Installing collected packages: commonmark, typing-extensions, tqdm, toml, rich, numpy, mplhep-data, lz4, llvmlite, fsspec, cloudpickle, click, cachetools, vector, uhi, scipy, pydantic, pyarrow, pandas, numba, boost-histogram, awkward0, uproot3-methods, mplhep, histoprint, correctionlib, uproot3, hist, coffea
+[MFLOG|0|2022-10-21T20:54:40.315160Z|runtime|7c9d6a7c-980f-4668-9c7f-00fde18cbf59]  Attempting uninstall: numpy
+[MFLOG|0|2022-10-21T20:54:40.315296Z|runtime|de68e956-8d46-4b52-a379-f8e71085490e]    Found existing installation: numpy 1.23.1
+[MFLOG|0|2022-10-21T20:54:40.315406Z|runtime|eaddcb07-f1d1-476a-9dc5-98af4b6aca5a]    Uninstalling numpy-1.23.1:
+[MFLOG|0|2022-10-21T20:54:40.315521Z|runtime|051e6258-1dcc-4ac1-93b9-80adee5c48f9]      Successfully uninstalled numpy-1.23.1
+[MFLOG|0|2022-10-21T20:54:40.315641Z|runtime|15ff059d-6c25-4d98-9120-bb64599438a2]Successfully installed awkward0-0.15.5 boost-histogram-1.3.2 cachetools-5.2.0 click-8.1.3 cloudpickle-2.2.0 coffea-0.7.19 commonmark-0.9.1 correctionlib-2.2.2 fsspec-2022.10.0 hist-2.6.2 histoprint-2.4.0 llvmlite-0.39.1 lz4-4.0.2 mplhep-0.3.26 mplhep-data-0.0.3 numba-0.56.3 numpy-1.21.6 pandas-1.5.1 pyarrow-9.0.0 pydantic-1.10.2 rich-12.6.0 scipy-1.9.3 toml-0.10.2 tqdm-4.64.1 typing-extensions-4.4.0 uhi-0.3.2 uproot3-3.14.4 uproot3-methods-0.10.1 vector-0.10.0
+[MFLOG|0|2022-10-21T20:54:40.315771Z|runtime|3e4657c8-7acb-4ab3-b6be-e501bfba4acd]
+[MFLOG|0|2022-10-21T20:54:40.315888Z|runtime|b99c97a4-c2a1-4f55-b7f3-9f1af82ec81f][notice] A new release of pip available: 22.1.2 -> 22.3
+[MFLOG|0|2022-10-21T20:54:40.316007Z|runtime|c984a6b7-73c3-4e68-90c7-77855571b5cf][notice] To update, run: pip install --upgrade pip
+[MFLOG|0|2022-10-21T20:54:40.316128Z|runtime|5a98a700-db4e-40c5-9aef-19fab36673d2]processes in fileset: ['data__nominal', 'ttbar__nominal', 'ttbar__scaledown', 'ttbar__scaleup', 'ttbar__ME_var', 'ttbar__PS_var', 'single_top_t_chan__nominal', 'single_atop_t_chan__nominal', 'single_top_tW__nominal', 'wjets__nominal']
+[MFLOG|0|2022-10-21T20:54:40.316253Z|runtime|1fc5a346-6414-4b2e-a6ad-30196225c25f]
+[MFLOG|0|2022-10-21T20:54:40.316380Z|runtime|02346fbe-d2cf-4dc6-b124-5ad3c1c50163]example of information in fileset:
+[MFLOG|0|2022-10-21T20:54:40.316521Z|runtime|a8cc43c3-e304-476f-8859-57b61636aeba] {
+[MFLOG|0|2022-10-21T20:54:40.316658Z|runtime|341957ce-7243-44d4-8a96-98d78bf1fc10]  'files': [/home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/output/19980/myoutput_merged.root, ...],
+[MFLOG|0|2022-10-21T20:54:40.316780Z|runtime|e33c458c-f312-4f8b-a3b9-0ea7071a3abb]  'metadata': {'process': 'ttbar', 'variation': 'nominal', 'nevts': 210294.5292188915, 'xsec': 831.76}
+[MFLOG|0|2022-10-21T20:54:40.316901Z|runtime|1a429660-f3aa-4645-88b4-c9d223732e05]}
+[MFLOG|0|2022-10-21T20:54:40.317048Z|runtime|62efa541-095d-47b8-9c9c-e036e3a43ebf]Preprocessing   0%                         0/12 [ 0:00:00 < -:--:-- | ? file/s ]
+[MFLOG|0|2022-10-21T20:54:40.317189Z|runtime|af8a2b9f-64dd-4fa1-8eda-8ed3a2484753]
+[MFLOG|0|2022-10-21T20:54:40.317308Z|runtime|8be7fc38-87c9-4507-8d09-24a113d72a8f]Return Code: 1
+[MFLOG|0|2022-10-21T20:54:40.317430Z|runtime|2b9682dc-d620-47ed-b3d3-7e5edd6fb7d0]The error is: 
+[MFLOG|0|2022-10-21T20:54:40.317548Z|runtime|01a9f67b-2271-4a4c-a1ae-7bf466426439] Cloning into 'workshop2022-lesson-ttbarljetsanalysis-payload'...
+[MFLOG|0|2022-10-21T20:54:40.317672Z|runtime|4a52f15c-b800-44fc-801c-cc1a1ff4c98a]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T20:54:40.317792Z|runtime|a4d57f72-3df8-4531-94cc-d0e0da6559ec]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 112, in _open
+[MFLOG|0|2022-10-21T20:54:40.317909Z|runtime|9c6a2a7c-62db-4769-8833-3a4838c4b62b]    self._file = numpy.memmap(self._file_path, dtype=self._dtype, mode="r")
+[MFLOG|0|2022-10-21T20:54:40.318034Z|runtime|5bca1e8e-8658-412c-b027-9bc59b961c23]  File "/usr/local/venv/lib/python3.10/site-packages/numpy/core/memmap.py", line 228, in __new__
+[MFLOG|0|2022-10-21T20:54:40.318156Z|runtime|6ee6cf66-2d59-4362-8cbc-ae9552516fbd]    f_ctx = open(os_fspath(filename), ('r' if mode == 'c' else mode)+'b')
+[MFLOG|0|2022-10-21T20:54:40.318278Z|runtime|e736190d-82a0-403a-992e-ab1edccc6914]FileNotFoundError: [Errno 2] No such file or directory: '/home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/output/19397/myoutput_merged.root'
+[MFLOG|0|2022-10-21T20:54:40.318402Z|runtime|836d6f09-fd81-4bb7-abf5-65b87ade8e1f]
+[MFLOG|0|2022-10-21T20:54:40.318525Z|runtime|11c57554-7d49-479b-98f5-751ac7be29fd]During handling of the above exception, another exception occurred:
+[MFLOG|0|2022-10-21T20:54:40.318640Z|runtime|ea31a581-1287-404d-9b63-81c1c4b6d0b5]
+[MFLOG|0|2022-10-21T20:54:40.318756Z|runtime|abb5474f-9a62-4dbd-964d-0f5973ec46ce]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T20:54:40.318865Z|runtime|552a2e2a-59c3-43d9-a035-566dff0d6ae3]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 36, in __init__
+[MFLOG|0|2022-10-21T20:54:40.318973Z|runtime|7529401b-cbca-474d-ab38-c03e78028764]    self._file = open(self._file_path, "rb")
+[MFLOG|0|2022-10-21T20:54:40.319082Z|runtime|9c11d4ba-a09c-416c-ab1e-8d220ed52afb]FileNotFoundError: [Errno 2] No such file or directory: '/home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/output/19397/myoutput_merged.root'
+[MFLOG|0|2022-10-21T20:54:40.319194Z|runtime|7021caba-1faa-4cb7-9756-3b4f69bfb51a]
+[MFLOG|0|2022-10-21T20:54:40.319307Z|runtime|dda24503-2f70-49e1-8608-663860f38175]During handling of the above exception, another exception occurred:
+[MFLOG|0|2022-10-21T20:54:40.319415Z|runtime|6aa7421e-6a0b-47d3-910a-2a9bd60c3e61]
+[MFLOG|0|2022-10-21T20:54:40.319522Z|runtime|57584491-5ac3-4cba-aada-1957ecf97b8d]Traceback (most recent call last):
+[MFLOG|0|2022-10-21T20:54:40.319634Z|runtime|5614a730-fd20-4822-9e43-3178f821e943]  File "/code/workshop2022-lesson-ttbarljetsanalysis-payload/coffeaAnalysis_ttbarljets.py", line 283, in <module>
+[MFLOG|0|2022-10-21T20:54:40.319743Z|runtime|b0303f7d-efc4-4fba-ac48-01de83134da3]    all_histograms, metrics = run(fileset, "events", processor_instance=TtbarAnalysis())
+[MFLOG|0|2022-10-21T20:54:40.319850Z|runtime|c713859a-810b-4c76-bfda-a320a8d84369]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1677, in __call__
+[MFLOG|0|2022-10-21T20:54:40.319958Z|runtime|7ade98c5-5770-4ddb-a32f-ef4e1d1bae69]    wrapped_out = self.run(fileset, processor_instance, treename)
+[MFLOG|0|2022-10-21T20:54:40.320066Z|runtime|d8832194-4ade-4498-8c52-16e9467cc860]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1759, in run
+[MFLOG|0|2022-10-21T20:54:40.320173Z|runtime|37f059f9-2b3b-4fd7-bf79-3d5cf1968f77]    chunks = self.preprocess(fileset, treename)
+[MFLOG|0|2022-10-21T20:54:40.320283Z|runtime|4b66856e-8c96-4462-b819-43de968e47dc]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1711, in preprocess
+[MFLOG|0|2022-10-21T20:54:40.320395Z|runtime|407ff6ac-ba40-47ab-88cd-b6c709f003f2]    self._preprocess_fileset(fileset)
+[MFLOG|0|2022-10-21T20:54:40.355682Z|runtime|f1f8ac79-d90f-447f-a69d-ad5d4678f43a]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1438, in _preprocess_fileset
+[MFLOG|0|2022-10-21T20:54:40.356428Z|runtime|8748d700-cee8-4095-a980-d329bcf8bb80]    out, _ = pre_executor(to_get, closure, out)
+[MFLOG|0|2022-10-21T20:54:40.357167Z|runtime|50736491-400a-4950-978d-af0054727fc4]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 668, in __call__
+[MFLOG|0|2022-10-21T20:54:40.357323Z|runtime|b656dfdb-541f-431b-8638-555f2e29790d]    accumulate(
+[MFLOG|0|2022-10-21T20:54:40.357921Z|runtime|6abde638-ad5a-43be-b34e-07eeccf1d93d]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/accumulator.py", line 100, in accumulate
+[MFLOG|0|2022-10-21T20:54:40.359503Z|runtime|686cb8f8-9586-4222-bf17-e343a09b5f97]    accum = iadd(accum, next(gen))
+[MFLOG|0|2022-10-21T20:54:40.360691Z|runtime|7d873182-8ff0-4dd4-97d9-e2b43088f85b]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/accumulator.py", line 92, in <genexpr>
+[MFLOG|0|2022-10-21T20:54:41.540246Z|runtime|441e546a-58e3-400b-9126-94208ce1dcb2]    gen = (x for x in items if x is not None)
+[MFLOG|0|2022-10-21T20:54:41.540420Z|runtime|bf5f4dbf-a203-4111-8c33-c65883b93388]  File "/usr/local/venv/lib/python3.10/site-packages/rich/progress.py", line 1221, in track
+[MFLOG|0|2022-10-21T20:54:41.540548Z|runtime|84272dd1-98cb-4fdb-8076-04147aca581d]    for value in sequence:
+[MFLOG|0|2022-10-21T20:54:41.540659Z|runtime|49d35de6-68ed-495c-b86f-be2de78c6884]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1348, in automatic_retries
+[MFLOG|0|2022-10-21T20:54:41.540765Z|runtime|78b8c07c-c966-49be-9404-634276ba8094]    raise e
+[MFLOG|0|2022-10-21T20:54:41.540878Z|runtime|995cf689-152b-4bb1-94ff-621899817a20]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1333, in automatic_retries
+[MFLOG|0|2022-10-21T20:54:41.540992Z|runtime|012910ba-07e2-403c-805e-b6bbf8f0f2b8]    return func(*args, **kwargs)
+[MFLOG|0|2022-10-21T20:54:41.541111Z|runtime|679dd9f3-9ef8-4ce3-bb71-f7e850f376ff]  File "/usr/local/venv/lib/python3.10/site-packages/coffea/processor/executor.py", line 1398, in metadata_fetcher
+[MFLOG|0|2022-10-21T20:54:41.541229Z|runtime|615ad684-fc6e-4e38-9130-e61d2ce588ae]    with uproot.open(item.filename, timeout=xrootdtimeout) as file:
+[MFLOG|0|2022-10-21T20:54:41.541347Z|runtime|95dfb792-28c3-4099-89d6-f946a884283b]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/reading.py", line 141, in open
+[MFLOG|0|2022-10-21T20:54:41.541476Z|runtime|a7b3870a-f310-4f15-be71-c21d167af54c]    file = ReadOnlyFile(
+[MFLOG|0|2022-10-21T20:54:41.541607Z|runtime|15438861-3e26-4c59-ba64-d3a126fb145d]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/reading.py", line 580, in __init__
+[MFLOG|0|2022-10-21T20:54:41.541737Z|runtime|4f6eab48-14df-4772-9ebd-8f6bd317fee9]    self._source = Source(
+[MFLOG|0|2022-10-21T20:54:41.541861Z|runtime|4128181e-bde3-454e-8ab9-52bcb2d9afa6]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 108, in __init__
+[MFLOG|0|2022-10-21T20:54:41.541999Z|runtime|6b6d24a6-d4d5-4dae-ad0a-e024a126757f]    self._open()
+[MFLOG|0|2022-10-21T20:54:41.542130Z|runtime|cfcb19f9-ea5d-46b8-8723-0774e6704efc]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 118, in _open
+[MFLOG|0|2022-10-21T20:54:41.542261Z|runtime|188191dc-c00b-4607-9f28-666b84c913e5]    self._fallback = uproot.source.file.MultithreadedFileSource(
+[MFLOG|0|2022-10-21T20:54:41.542390Z|runtime|32248e97-f296-4204-9b8d-1dffcaae3eb3]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 250, in __init__
+[MFLOG|0|2022-10-21T20:54:41.542519Z|runtime|4826641f-4529-4a81-8af4-c19d50231ff1]    self._open()
+[MFLOG|0|2022-10-21T20:54:41.542648Z|runtime|0a658cc4-1bc5-4517-af6f-c82180462f00]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 254, in _open
+[MFLOG|0|2022-10-21T20:54:41.542790Z|runtime|d793b463-aa47-4ed4-a7b9-cb6144116f6d]    [FileResource(self._file_path) for x in range(self._num_workers)]
+[MFLOG|0|2022-10-21T20:54:41.542918Z|runtime|fb48695e-de8d-4754-9350-2d60d4ddfff4]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 254, in <listcomp>
+[MFLOG|0|2022-10-21T20:54:41.543075Z|runtime|6f5847a5-9435-4be8-81de-367dd5432609]    [FileResource(self._file_path) for x in range(self._num_workers)]
+[MFLOG|0|2022-10-21T20:54:41.543202Z|runtime|dfd4ee54-8066-4f4b-8133-885b53b72633]  File "/usr/local/venv/lib/python3.10/site-packages/uproot/source/file.py", line 38, in __init__
+[MFLOG|0|2022-10-21T20:54:41.543346Z|runtime|68a3a452-bbc9-427d-83d2-458c41e895b3]    raise uproot._util._file_not_found(file_path)
+[MFLOG|0|2022-10-21T20:54:41.543503Z|runtime|6969e36f-5f83-440a-9a65-cdfde23f5c63]FileNotFoundError: file not found
+[MFLOG|0|2022-10-21T20:54:41.543674Z|runtime|a27b5827-4915-4e6e-96d9-961530769dcd]
+[MFLOG|0|2022-10-21T20:54:41.543828Z|runtime|8cec92bd-7dc5-4ae9-a5b8-53ef9cf1acf4]    '/home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/output/19397/myoutput_merged.root'
+[MFLOG|0|2022-10-21T20:54:41.543963Z|runtime|327316ea-16a8-4756-a18b-e936b6ca59a8]
+[MFLOG|0|2022-10-21T20:54:41.544092Z|runtime|316bb3f2-080b-4228-884c-af031998839a]Files may be specified as:
+[MFLOG|0|2022-10-21T20:54:41.544220Z|runtime|37c9a509-d6e6-4348-b70b-4c6526a4e82f]   * str/bytes: relative or absolute filesystem path or URL, without any colons
+[MFLOG|0|2022-10-21T20:54:41.544345Z|runtime|c89e03f7-7086-4856-8032-762a3f42ad1d]         other than Windows drive letter or URL schema.
+[MFLOG|0|2022-10-21T20:54:41.544487Z|runtime|53777238-84e8-4aa9-906b-a9702eabae91]         Examples: "rel/file.root", "C:\abs\file.root", "http://where/what.root"
+[MFLOG|0|2022-10-21T20:54:41.544643Z|runtime|533de3e6-27f6-431f-a16c-080472923918]   * str/bytes: same with an object-within-ROOT path, separated by a colon.
+[MFLOG|0|2022-10-21T20:54:41.544768Z|runtime|f63d2db9-a11f-4100-880d-e707b6e169c7]         Example: "rel/file.root:tdirectory/ttree"
+[MFLOG|0|2022-10-21T20:54:41.544896Z|runtime|fe55ec6f-af0e-44a8-824e-cb3af2ef37b0]   * pathlib.Path: always interpreted as a filesystem path or URL only (no
+[MFLOG|0|2022-10-21T20:54:41.545022Z|runtime|edc4eaf4-e507-4400-8343-31d90e9f2dfd]         object-within-ROOT path), regardless of whether there are any colons.
+[MFLOG|0|2022-10-21T20:54:41.545149Z|runtime|ccb9daa8-ace3-4f89-89c8-941652f90dd0]         Examples: Path("rel:/file.root"), Path("/abs/path:stuff.root")
+[MFLOG|0|2022-10-21T20:54:41.545314Z|runtime|19487e64-e898-4486-b52a-c9201534e0d8]
+[MFLOG|0|2022-10-21T20:54:41.545449Z|runtime|f1f1cc48-e99c-4137-8e15-89787a9b7895]Functions that accept many files (uproot.iterate, etc.) also allow:
+[MFLOG|0|2022-10-21T20:54:41.545576Z|runtime|3a96bf06-1037-423d-bf88-109684e7a131]   * glob syntax in str/bytes and pathlib.Path.
+[MFLOG|0|2022-10-21T20:54:41.545705Z|runtime|612d2bed-ad55-4b50-b481-05abf959262e]         Examples: Path("rel/*.root"), "/abs/*.root:tdirectory/ttree"
+[MFLOG|0|2022-10-21T20:54:41.545827Z|runtime|17bfbf2d-d335-4625-a463-eaf4ebf2d102]   * dict: keys are filesystem paths, values are objects-within-ROOT paths.
+[MFLOG|0|2022-10-21T20:54:41.545963Z|runtime|07558b80-024b-4857-a5b5-052c96d86adf]         Example: {"/data_v1/*.root": "ttree_v1", "/data_v2/*.root": "ttree_v2"}
+[MFLOG|0|2022-10-21T20:54:41.546090Z|runtime|628b48b1-903f-47d2-8bbc-8c6e9bde9588]   * already-open TTree objects.
+[MFLOG|0|2022-10-21T20:54:41.546286Z|runtime|6f1d6be5-8267-46b8-968f-1273d9820076]   * iterables of the above.
+[MFLOG|0|2022-10-21T20:54:41.546412Z|runtime|c7c4a4e0-1a7d-4510-992d-49794a07d7c2]
+[MFLOG|0|2022-10-21T20:54:41.546550Z|runtime|98fdc634-83a3-4c81-ba78-f9afdeb8f8a3]mv: cannot stat '*root': No such file or directory
+[MFLOG|0|2022-10-21T20:54:41.546687Z|runtime|39a13cbd-ef90-4610-9564-479249192a9c]

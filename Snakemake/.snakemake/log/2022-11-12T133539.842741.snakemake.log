@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	fileListCommand
+	13
+
+[Sat Nov 12 13:35:39 2022]
+rule fileListCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/data, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/nevents, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_19397.txt
+    jobid: 10
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=19397
+
+InputFunctionException in line 205 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+AttributeError: 'Wildcards' object has no attribute 'dir_path'
+Wildcards:
+vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+recid=19397

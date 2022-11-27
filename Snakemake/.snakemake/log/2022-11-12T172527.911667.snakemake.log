@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	runpoetCommand
+	2
+
+[Sat Nov 12 17:25:27 2022]
+rule runpoetCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/files_24119.txt
+    output: 24119/myoutput.root
+    jobid: 4
+    wildcards: recid=24119
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

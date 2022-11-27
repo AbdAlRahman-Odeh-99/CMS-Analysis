@@ -1,0 +1,17 @@
+[MFLOG|0|2022-10-21T01:27:35.528772Z|runtime|4a768e51-787f-45dc-8a75-6c063d022144]The command is: 
+[MFLOG|0|2022-10-21T01:27:35.529667Z|runtime|298b67bb-4af9-40f4-8e32-cb81baae29c9] 
+[MFLOG|0|2022-10-21T01:27:35.530301Z|runtime|8282c058-74b6-4319-b513-adf851490c9c]        docker pull ubuntu:latest
+[MFLOG|0|2022-10-21T01:27:35.531818Z|runtime|99e366f5-0184-4ec5-bdf0-bf7b5431694a]        docker pull cernopendata/cernopendata-client:0.3.0
+[MFLOG|0|2022-10-21T01:27:35.532517Z|runtime|7cb526fc-d416-4c47-ba1e-3907261681ab]        docker pull cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493
+[MFLOG|0|2022-10-21T01:27:35.533132Z|runtime|4a551a4d-c254-4c04-88e9-c42a19b93df0]        docker pull gitlab-registry.cern.ch/cms-cloud/python-vnc:latest
+[MFLOG|0|2022-10-21T01:27:35.533748Z|runtime|0faf95c2-a27b-4261-8ce3-824f24551ba9]        
+[MFLOG|0|2022-10-21T01:27:35.534294Z|runtime|4bb3659c-61cf-441b-b429-27f0a1480527]The output is: 
+[MFLOG|0|2022-10-21T01:27:35.534794Z|runtime|dc7ce32b-3a7b-43a2-982e-176ce269d5d1] Using default tag: latest
+[MFLOG|0|2022-10-21T01:27:35.535258Z|runtime|b5ff1410-f3b7-452f-a79f-7fe4f1b22f9b]
+[MFLOG|0|2022-10-21T01:27:35.535698Z|runtime|1f2cec84-a5f1-4df1-bd31-7fd29b64fc48]Return Code: 1
+[MFLOG|0|2022-10-21T01:27:35.536116Z|runtime|f58dd2d9-4b07-4a04-8bfa-e6b250eb9307]The error is: 
+[MFLOG|0|2022-10-21T01:27:35.536509Z|runtime|425a00d9-5259-40a0-ab56-99c36ecd56e9] Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: TLS handshake timeout
+[MFLOG|0|2022-10-21T01:27:35.536933Z|runtime|d4242cd3-9eac-4f29-8ae3-65722cd81665]Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+[MFLOG|0|2022-10-21T01:27:35.537420Z|runtime|1c60ff3d-7594-49d3-a4d4-8fdcbd72352f]Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+[MFLOG|0|2022-10-21T01:27:35.537940Z|runtime|325d513e-dc90-48d3-b1be-a43dda6f5e0e]Error response from daemon: Get "https://gitlab-registry.cern.ch/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+[MFLOG|0|2022-10-21T01:27:35.538407Z|runtime|a20e01f4-68b8-4aba-aa60-af0f2da6b907]

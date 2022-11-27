@@ -1,0 +1,11 @@
+[MFLOG|0|2022-10-21T20:48:09.611504Z|runtime|3c6544c3-6674-46c5-92df-e118cdcfdf7b]The command is: 
+[MFLOG|0|2022-10-21T20:48:12.506113Z|runtime|c0bcb1f8-8660-47db-b122-cf77165896dc] 
+[MFLOG|0|2022-10-21T20:48:12.508939Z|runtime|7ee09ee6-a379-4375-bde5-da1f8c61f223]        docker run         --rm         -i         -d         --name python-24120         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start python-24120 &&         docker exec python-24120 bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/flattentrees-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol 24120
+[MFLOG|0|2022-10-21T20:48:12.513191Z|runtime|37f87069-08f2-47d0-9ebd-db32aba12477]        
+[MFLOG|0|2022-10-21T20:48:12.520479Z|runtime|321fbeb7-5a03-4d65-8d1e-443a8aa8ba26]The output is: 
+[MFLOG|0|2022-10-21T20:48:12.521204Z|runtime|8ec224ed-024f-4ab6-b28e-b3ace4063fe9] 
+[MFLOG|0|2022-10-21T20:48:12.521562Z|runtime|ec8f0004-7613-4a94-9a01-d1521850453e]Return Code: 125
+[MFLOG|0|2022-10-21T20:48:12.522990Z|runtime|eb1e046d-9f0a-4ea1-b254-1505ee14f7cf]The error is: 
+[MFLOG|0|2022-10-21T20:48:12.523544Z|runtime|040f89e3-2a60-4f5e-a6ec-fca74a912a30] docker: Error response from daemon: Conflict. The container name "/python-24120" is already in use by container "39a0e13f7b5ff4030c6fbefdc8e044649560d1d7f3ebc7a7187ed5cb2bcf3361". You have to remove (or rename) that container to be able to reuse that name.
+[MFLOG|0|2022-10-21T20:48:12.524253Z|runtime|6b110666-5a0f-4c37-a111-a2b04de1563a]See 'docker run --help'.
+[MFLOG|0|2022-10-21T20:48:12.525714Z|runtime|d431190c-6521-492e-9eda-baf3777fe113]

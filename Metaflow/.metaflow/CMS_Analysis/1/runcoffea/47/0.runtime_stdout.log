@@ -1,0 +1,124 @@
+[MFLOG|0|2022-10-22T00:03:16.309288Z|runtime|6832e164-aa3f-43bc-ae21-e10038e5791c]The command is: 
+[MFLOG|0|2022-10-22T00:03:16.309592Z|runtime|c343a485-e611-45b7-9ef6-53d0e25c1bd0] 
+[MFLOG|0|2022-10-22T00:03:16.309760Z|runtime|5bbda51f-8183-4836-b504-8ced9d5e720e]        docker run         -i         -d         --name run-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start run-coffea &&         docker exec run-coffea bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/commands.sh &&         docker stop run-coffea &&         docker rm run-coffea
+[MFLOG|0|2022-10-22T00:03:16.309951Z|runtime|f93fe5d3-1e29-42d5-9e21-2d2fe8c64e09]        
+[MFLOG|0|2022-10-22T00:03:16.310124Z|runtime|94da907f-ba74-4077-a4ba-646aa6b67437]The output is: 
+[MFLOG|0|2022-10-22T00:03:16.310292Z|runtime|fc6275f1-202a-4ab2-bfb0-d4dd1cbc11e0] 269160d0d836f329cce7fd29c3b90bda7ffdbb6c8ffa89c34037419dbc4a099e
+[MFLOG|0|2022-10-22T00:03:16.310460Z|runtime|469196b4-8ac6-4004-af88-944901e26a83]run-coffea
+[MFLOG|0|2022-10-22T00:03:16.310643Z|runtime|84f8c3d3-f8ff-4836-b474-48f22d933523]Collecting vector
+[MFLOG|0|2022-10-22T00:03:16.310800Z|runtime|79f20199-a730-4af4-85fb-f9980c74e533]  Downloading vector-0.10.0-py3-none-any.whl (166 kB)
+[MFLOG|0|2022-10-22T00:03:16.310970Z|runtime|db231523-a626-492d-8849-5a5d4ed5eed4]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.9/166.9 kB 660.1 kB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.311130Z|runtime|70aed6dc-64b5-4b16-8685-2a6846c2f90c]Collecting hist
+[MFLOG|0|2022-10-22T00:03:16.311267Z|runtime|fdec9e84-3232-4fb2-b994-2e748cdf9feb]  Downloading hist-2.6.2-py3-none-any.whl (35 kB)
+[MFLOG|0|2022-10-22T00:03:16.311386Z|runtime|db9b918e-799b-4994-a756-b992428dfa32]Collecting mplhep
+[MFLOG|0|2022-10-22T00:03:16.311503Z|runtime|8b585990-1dec-481f-b331-017a70e8ef7c]  Downloading mplhep-0.3.26-py3-none-any.whl (34 kB)
+[MFLOG|0|2022-10-22T00:03:16.311612Z|runtime|7935bcba-d327-4994-8024-b3509b2470b3]Collecting coffea
+[MFLOG|0|2022-10-22T00:03:16.311757Z|runtime|9146d1a2-cb89-4408-ae8b-efa76f3bb223]  Downloading coffea-0.7.19-py2.py3-none-any.whl (196 kB)
+[MFLOG|0|2022-10-22T00:03:16.311895Z|runtime|f52ff8af-31fe-4f6d-b7ca-5a13197d1116]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.5/196.5 kB 1.9 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.312044Z|runtime|04a86280-d438-46cc-9a80-370f80577328]Requirement already satisfied: numpy>=1.13.3 in /usr/local/venv/lib/python3.10/site-packages (from vector) (1.23.1)
+[MFLOG|0|2022-10-22T00:03:16.312197Z|runtime|03069649-5451-4e5f-9bb8-761380465878]Requirement already satisfied: packaging>=19 in /usr/local/venv/lib/python3.10/site-packages (from vector) (21.3)
+[MFLOG|0|2022-10-22T00:03:16.312329Z|runtime|5224a1e8-9176-4ea9-ad0e-075a18f27622]Collecting histoprint>=2.2.0
+[MFLOG|0|2022-10-22T00:03:16.312463Z|runtime|e73a2b89-d5e0-417e-ae1e-c0c424fb966b]  Downloading histoprint-2.4.0-py3-none-any.whl (16 kB)
+[MFLOG|0|2022-10-22T00:03:16.312585Z|runtime|1b3d5e6f-8cec-467b-b262-6a3c28026383]Collecting boost-histogram~=1.3.1
+[MFLOG|0|2022-10-22T00:03:16.312702Z|runtime|efcfcfde-2c53-417d-ac86-d4e6ae7da0dd]  Downloading boost_histogram-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+[MFLOG|0|2022-10-22T00:03:16.312819Z|runtime|3b6f352a-46b0-4002-81a2-a1ebd0be5236]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 4.3 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.312936Z|runtime|132fef1f-e66c-4389-86f6-9640486a9008]Requirement already satisfied: matplotlib>=3.4 in /usr/local/venv/lib/python3.10/site-packages (from mplhep) (3.5.2)
+[MFLOG|0|2022-10-22T00:03:16.313047Z|runtime|be9d3808-0b69-4f3f-9459-bffb513efce6]Collecting uhi>=0.2.0
+[MFLOG|0|2022-10-22T00:03:16.313162Z|runtime|a359cf7e-6f0f-401f-84c5-c50b97517e14]  Downloading uhi-0.3.2-py3-none-any.whl (10 kB)
+[MFLOG|0|2022-10-22T00:03:16.313273Z|runtime|9dafb762-b850-4edc-b16d-8367951d9dcd]Collecting mplhep-data
+[MFLOG|0|2022-10-22T00:03:16.313385Z|runtime|b4252814-783b-48b8-a307-75fbbc8d1259]  Downloading mplhep_data-0.0.3-py3-none-any.whl (5.8 MB)
+[MFLOG|0|2022-10-22T00:03:16.313508Z|runtime|f618e9a6-b712-48cf-bdfe-dc2134536c57]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 3.6 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.313689Z|runtime|e06e3fdf-a270-4705-b661-3797600b7e8a]Collecting scipy>=1.1.0
+[MFLOG|0|2022-10-22T00:03:16.313855Z|runtime|0b366d78-995f-4bde-9966-446c03de371a]  Downloading scipy-1.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (33.7 MB)
+[MFLOG|0|2022-10-22T00:03:16.314011Z|runtime|9f7ae9b8-78f6-48c9-b4ea-e8965fd2733a]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.7/33.7 MB 3.4 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.314158Z|runtime|b8089f71-564e-413d-8b8d-6a666d059dca]Collecting toml>=0.10.2
+[MFLOG|0|2022-10-22T00:03:16.314305Z|runtime|64963fd8-57fc-4ab0-a756-a311445fa669]  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+[MFLOG|0|2022-10-22T00:03:16.314443Z|runtime|c82cc36f-59d7-4adc-ae00-0de38f805f05]Collecting pandas
+[MFLOG|0|2022-10-22T00:03:16.314593Z|runtime|52cdba60-6c84-4a37-89b1-c670ed175e89]  Downloading pandas-1.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+[MFLOG|0|2022-10-22T00:03:16.314759Z|runtime|6cbfcda2-6bd3-43f1-ac34-56e8fe2e3566]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 4.5 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.314924Z|runtime|7861abc4-5a93-43ce-a771-bf4b79a38ace]Collecting cloudpickle>=1.2.3
+[MFLOG|0|2022-10-22T00:03:16.315071Z|runtime|e158cc0b-51ee-4b82-8120-50f092470492]  Downloading cloudpickle-2.2.0-py3-none-any.whl (25 kB)
+[MFLOG|0|2022-10-22T00:03:16.315220Z|runtime|da0185d0-a8e0-48e0-8af8-eb66335ee16d]Collecting lz4
+[MFLOG|0|2022-10-22T00:03:16.315364Z|runtime|a4fc178f-92b4-44a2-8140-68094ffa6884]  Downloading lz4-4.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+[MFLOG|0|2022-10-22T00:03:16.315473Z|runtime|0ea2f1ba-ba34-43cd-a7d1-c10325eb2550]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 3.6 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.315594Z|runtime|f370a772-c616-4d9c-8db1-84b6d1897151]Collecting cachetools
+[MFLOG|0|2022-10-22T00:03:16.315709Z|runtime|a86ca174-d28b-422d-8bd8-0fd2735852d5]  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+[MFLOG|0|2022-10-22T00:03:16.315830Z|runtime|bf9ae6c8-89e3-4663-ace5-6d7665e17bf5]Collecting pyarrow>=1.0.0
+[MFLOG|0|2022-10-22T00:03:16.315937Z|runtime|6052e1fb-b371-443a-8d2f-373935ceaf32]  Downloading pyarrow-9.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (35.3 MB)
+[MFLOG|0|2022-10-22T00:03:16.316047Z|runtime|6aac418b-9c18-477a-b709-bed24d3c6e95]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 4.2 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.316175Z|runtime|12fe350f-e37b-4b81-922a-b665cfe85f5d]Collecting fsspec
+[MFLOG|0|2022-10-22T00:03:16.316303Z|runtime|dfd95fb6-ca6c-4426-b369-0f922b711dfe]  Downloading fsspec-2022.10.0-py3-none-any.whl (138 kB)
+[MFLOG|0|2022-10-22T00:03:16.316430Z|runtime|3e45fc1d-24a9-4402-aa6b-9ecbbfbd488b]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.8/138.8 kB 3.7 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.316594Z|runtime|f72941ba-5ffd-48c5-9576-fc22c4b9c6a7]Requirement already satisfied: awkward<2,>=1.5.1 in /usr/local/venv/lib/python3.10/site-packages (from coffea) (1.8.0)
+[MFLOG|0|2022-10-22T00:03:16.316741Z|runtime|938e5c75-56ef-4c62-b4f2-6929c154df9b]Collecting uproot3>=3.14.1
+[MFLOG|0|2022-10-22T00:03:16.316889Z|runtime|b386c886-8923-454a-b13e-4b8ea9addc3d]  Downloading uproot3-3.14.4-py3-none-any.whl (117 kB)
+[MFLOG|0|2022-10-22T00:03:16.317034Z|runtime|eb56e87c-25ad-479c-bbca-1be621d3ac22]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.5/117.5 kB 2.3 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.317184Z|runtime|45dc5cfd-6fce-4a96-b486-d360d93787ac]Collecting tqdm>=4.27.0
+[MFLOG|0|2022-10-22T00:03:16.317328Z|runtime|fe4f4b75-8554-4285-9a2f-5cf1c1895317]  Downloading tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+[MFLOG|0|2022-10-22T00:03:16.317471Z|runtime|b1c53bd4-8a3c-491a-ba54-3598236d4e8a]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 2.7 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.317617Z|runtime|79380c24-3e51-465b-aafc-b90ce981a54b]Requirement already satisfied: uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6 in /usr/local/venv/lib/python3.10/site-packages (from coffea) (4.3.3)
+[MFLOG|0|2022-10-22T00:03:16.317761Z|runtime|7f5823b3-6c65-4af9-90de-00d2c0b8c714]Collecting numpy>=1.13.3
+[MFLOG|0|2022-10-22T00:03:16.317913Z|runtime|d359715b-840b-43da-9fae-2d0df242b498]  Downloading numpy-1.21.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.9 MB)
+[MFLOG|0|2022-10-22T00:03:16.318042Z|runtime|195ca298-b48a-4b75-8a3d-83caec71bc93]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.9/15.9 MB 4.1 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.318174Z|runtime|4b4e266c-d730-4b46-89e6-34dcb4b72766]Collecting correctionlib>=2.0.0
+[MFLOG|0|2022-10-22T00:03:16.318299Z|runtime|12746fa0-befe-4327-a3f5-d87720da9435]  Downloading correctionlib-2.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (421 kB)
+[MFLOG|0|2022-10-22T00:03:16.318423Z|runtime|b63f0bec-db0b-477c-ac08-4985086b999d]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.0/422.0 kB 4.4 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.318554Z|runtime|d234c079-00f8-456d-a7bc-26434c75c4f7]Collecting uproot3-methods>=0.10.0
+[MFLOG|0|2022-10-22T00:03:16.318680Z|runtime|f5ab04b7-9e9a-4e72-b99d-5b7d6b1b0052]  Downloading uproot3_methods-0.10.1-py3-none-any.whl (32 kB)
+[MFLOG|0|2022-10-22T00:03:16.318803Z|runtime|10010785-9dab-428f-8d4d-2e9fa69d9f74]Collecting numba>=0.50.0
+[MFLOG|0|2022-10-22T00:03:16.318926Z|runtime|1f3282ed-fd6c-46d7-8a35-07d46f1fe488]  Downloading numba-0.56.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+[MFLOG|0|2022-10-22T00:03:16.319048Z|runtime|a51bba9f-61e0-4ed1-b0ec-8fca54541d94]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 3.5 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.319176Z|runtime|73496717-3c21-412a-95fb-9b6194d6b97c]Requirement already satisfied: setuptools in /usr/local/venv/lib/python3.10/site-packages (from uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6->coffea) (63.2.0)
+[MFLOG|0|2022-10-22T00:03:16.319303Z|runtime|58e68e9c-1151-44f7-8caa-730a8e7ba50e]Collecting rich
+[MFLOG|0|2022-10-22T00:03:16.319428Z|runtime|5f90f20c-ff72-457e-93f9-c45e177ad4a0]  Downloading rich-12.6.0-py3-none-any.whl (237 kB)
+[MFLOG|0|2022-10-22T00:03:16.319545Z|runtime|d5071fc2-52a1-4cba-969f-a04d6e5d9f93]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.5/237.5 kB 3.9 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.319695Z|runtime|748eb21f-e1a9-4b09-a15d-4184ae07fd88]Collecting pydantic>=1.7.3
+[MFLOG|0|2022-10-22T00:03:16.319835Z|runtime|ea23db18-1a1e-44c8-ab2f-a54ede44bb66]  Downloading pydantic-1.10.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.8 MB)
+[MFLOG|0|2022-10-22T00:03:16.319962Z|runtime|9c003610-120d-4b29-9300-c61799bd4a19]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 4.5 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.320097Z|runtime|00e58f45-1846-4727-bbe5-9babc2fa9278]Collecting click>=7.0.0
+[MFLOG|0|2022-10-22T00:03:16.320230Z|runtime|2a3cff82-7b4a-44db-bb35-c1d8d8c0e2be]  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+[MFLOG|0|2022-10-22T00:03:16.320353Z|runtime|cb7947a1-6f2f-4a1e-bfc5-c064d07eea41]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 kB 4.4 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.320488Z|runtime|8647cf45-e3f9-4292-a772-f52bfd29073c]Requirement already satisfied: pillow>=6.2.0 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (9.2.0)
+[MFLOG|0|2022-10-22T00:03:16.320611Z|runtime|0453c842-4319-4ffe-b84c-5eb2922dace2]Requirement already satisfied: cycler>=0.10 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (0.11.0)
+[MFLOG|0|2022-10-22T00:03:16.320735Z|runtime|3d1f0c62-727b-44a0-91cc-3911325e7151]Requirement already satisfied: pyparsing>=2.2.1 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (3.0.9)
+[MFLOG|0|2022-10-22T00:03:16.321075Z|runtime|f601ab34-f6bc-47da-9745-2d3abd3a9b15]Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (1.4.3)
+[MFLOG|0|2022-10-22T00:03:16.321299Z|runtime|57bfd5b5-5960-4982-9f6b-5ff5334099f3]Requirement already satisfied: python-dateutil>=2.7 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (2.8.2)
+[MFLOG|0|2022-10-22T00:03:16.321487Z|runtime|e2e53a36-d03a-4961-8332-8f10d14611c9]Requirement already satisfied: fonttools>=4.22.0 in /usr/local/venv/lib/python3.10/site-packages (from matplotlib>=3.4->mplhep) (4.34.4)
+[MFLOG|0|2022-10-22T00:03:16.321663Z|runtime|7327644c-4e67-4999-951c-ca062fee30b4]Collecting llvmlite<0.40,>=0.39.0dev0
+[MFLOG|0|2022-10-22T00:03:16.321823Z|runtime|329c25f0-5dd0-44ad-a6f7-917fd9bc1679]  Downloading llvmlite-0.39.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.6 MB)
+[MFLOG|0|2022-10-22T00:03:16.321965Z|runtime|a5c93973-d3ae-446a-a7c3-7e978d38bc28]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.6/34.6 MB 3.8 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.322103Z|runtime|12111f36-01c2-4052-b385-f77e55a2d82e]Collecting awkward0
+[MFLOG|0|2022-10-22T00:03:16.322232Z|runtime|5358d80c-e409-43a8-9c39-463bc2e1376e]  Downloading awkward0-0.15.5-py3-none-any.whl (87 kB)
+[MFLOG|0|2022-10-22T00:03:16.322541Z|runtime|3cc3ff10-3053-40a2-97dc-83c105188b31]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.6/87.6 kB 3.0 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.322745Z|runtime|ab7dd1ff-e128-43a1-b580-00bc3a355307]Requirement already satisfied: pytz>=2020.1 in /usr/local/venv/lib/python3.10/site-packages (from pandas->coffea) (2022.1)
+[MFLOG|0|2022-10-22T00:03:16.322900Z|runtime|ce932a47-3873-4e66-9423-273c1e75c1c4]Collecting typing-extensions>=4.1.0
+[MFLOG|0|2022-10-22T00:03:16.323025Z|runtime|e53dcf4f-c087-4cc7-b01a-2870b56450da]  Downloading typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+[MFLOG|0|2022-10-22T00:03:16.323150Z|runtime|47cc30a7-80a4-4fd6-a676-260b279cbfad]Requirement already satisfied: six>=1.5 in /usr/local/venv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib>=3.4->mplhep) (1.16.0)
+[MFLOG|0|2022-10-22T00:03:16.323270Z|runtime|9029cddb-c88c-4ec6-b70b-40005d4a1117]Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /usr/local/venv/lib/python3.10/site-packages (from rich->correctionlib>=2.0.0->coffea) (2.12.0)
+[MFLOG|0|2022-10-22T00:03:16.323386Z|runtime|2b5a3b82-c0c0-45c3-b752-22334ba8d7db]Collecting commonmark<0.10.0,>=0.9.0
+[MFLOG|0|2022-10-22T00:03:16.323510Z|runtime|ca5e5f45-dfcb-4ad1-bd50-875d9605c67b]  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+[MFLOG|0|2022-10-22T00:03:16.323636Z|runtime|e6f2f6bc-223a-42b7-a85a-72d5f6f818a4]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 3.1 MB/s eta 0:00:00
+[MFLOG|0|2022-10-22T00:03:16.323784Z|runtime|19cfba2e-31fc-4627-8b76-22dca2cb449f]Installing collected packages: commonmark, typing-extensions, tqdm, toml, rich, numpy, mplhep-data, lz4, llvmlite, fsspec, cloudpickle, click, cachetools, vector, uhi, scipy, pydantic, pyarrow, pandas, numba, boost-histogram, awkward0, uproot3-methods, mplhep, histoprint, correctionlib, uproot3, hist, coffea
+[MFLOG|0|2022-10-22T00:03:17.231427Z|runtime|5ab15e7b-5996-43c5-8862-a2f1980308bf]  Attempting uninstall: numpy
+[MFLOG|0|2022-10-22T00:03:17.231604Z|runtime|2d8269bb-38a6-4733-bfac-6332dc589b6e]    Found existing installation: numpy 1.23.1
+[MFLOG|0|2022-10-22T00:03:17.231704Z|runtime|71c8d826-8dd3-4fb2-a892-1dbd3304b9ad]    Uninstalling numpy-1.23.1:
+[MFLOG|0|2022-10-22T00:03:17.231825Z|runtime|a2f46562-22f5-441e-ae32-61e29995901a]      Successfully uninstalled numpy-1.23.1
+[MFLOG|0|2022-10-22T00:03:17.231946Z|runtime|4d36e959-c98f-4557-be25-0e1392ba05fa]Successfully installed awkward0-0.15.5 boost-histogram-1.3.2 cachetools-5.2.0 click-8.1.3 cloudpickle-2.2.0 coffea-0.7.19 commonmark-0.9.1 correctionlib-2.2.2 fsspec-2022.10.0 hist-2.6.2 histoprint-2.4.0 llvmlite-0.39.1 lz4-4.0.2 mplhep-0.3.26 mplhep-data-0.0.3 numba-0.56.3 numpy-1.21.6 pandas-1.5.1 pyarrow-9.0.0 pydantic-1.10.2 rich-12.6.0 scipy-1.9.3 toml-0.10.2 tqdm-4.64.1 typing-extensions-4.4.0 uhi-0.3.2 uproot3-3.14.4 uproot3-methods-0.10.1 vector-0.10.0
+[MFLOG|0|2022-10-22T00:03:17.232091Z|runtime|1f54e5cc-2fc4-4b6e-8388-32afa45c9bc5]
+[MFLOG|0|2022-10-22T00:03:17.232464Z|runtime|bd96f822-0007-47bf-9fdf-3f4aa24be529][notice] A new release of pip available: 22.1.2 -> 22.3
+[MFLOG|0|2022-10-22T00:03:17.232673Z|runtime|4f6f02b0-1221-42d1-990e-c2b56d944bb2][notice] To update, run: pip install --upgrade pip
+[MFLOG|0|2022-10-22T00:03:17.232862Z|runtime|f5bdeaa8-55b9-453e-8ff2-47b62678affe]processes in fileset: ['data__nominal', 'ttbar__nominal', 'ttbar__scaledown', 'ttbar__scaleup', 'ttbar__ME_var', 'ttbar__PS_var', 'single_top_t_chan__nominal', 'single_atop_t_chan__nominal', 'single_top_tW__nominal', 'wjets__nominal']
+[MFLOG|0|2022-10-22T00:03:17.233043Z|runtime|6dedc45f-603a-48a0-997e-8b71352bf897]
+[MFLOG|0|2022-10-22T00:03:17.233203Z|runtime|13aef21c-602c-4f5c-809d-ba2073c4ade4]example of information in fileset:
+[MFLOG|0|2022-10-22T00:03:17.233371Z|runtime|5522215a-c976-4a06-9a08-4abbd58a163a] {
+[MFLOG|0|2022-10-22T00:03:17.233534Z|runtime|f3778502-e678-4e34-9889-23a21d75857f]  'files': [/home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/output/19980/myoutput_merged.root, ...],
+[MFLOG|0|2022-10-22T00:03:17.233694Z|runtime|423a3e1c-efc4-491e-9bac-7fca308dfab6]  'metadata': {'process': 'ttbar', 'variation': 'nominal', 'nevts': 210294.5292188915, 'xsec': 831.76}
+[MFLOG|0|2022-10-22T00:03:17.233849Z|runtime|23303bb0-8afe-4d1a-ba3a-8de2f0dfaecd]}
+[MFLOG|0|2022-10-22T00:03:17.234010Z|runtime|0fac7244-adbc-471c-9166-486fb21f588c]Preprocessing 100% ━━━━━━━━━━━━━━━━━━━━ 12/12 [ 0:00:02 < 0:00:00 | 4.8 file/s ]
+[MFLOG|0|2022-10-22T00:03:17.234187Z|runtime|1af0ffe5-21a9-4975-b7f7-5c73ef92f530]Processing 100% ━━━━━━━━━━━━━━━━━━━━━━ 12/12 [ 0:00:08 < 0:00:00 | 1.5 chunk/s ]
+[MFLOG|0|2022-10-22T00:03:17.234347Z|runtime|4ea4a7df-4d6a-40da-948c-8572ad156db2]
+[MFLOG|0|2022-10-22T00:03:17.234500Z|runtime|61c953c2-e203-4c4f-894f-1f2522d8e6a9]execution took 10.78 seconds
+[MFLOG|0|2022-10-22T00:03:17.234693Z|runtime|96e9196b-344a-4a6e-b544-73f3f1200fe9]run-coffea
+[MFLOG|0|2022-10-22T00:03:17.234825Z|runtime|d120ee51-0a59-4fa5-9a39-cb2a263cf1d8]run-coffea
+[MFLOG|0|2022-10-22T00:03:17.234951Z|runtime|ffcf9c27-887b-48c9-a4aa-9b806cd24d90]
+[MFLOG|0|2022-10-22T00:03:17.235079Z|runtime|f38087c3-f1c5-4d14-8913-2aa8119a3937]Return Code: 0

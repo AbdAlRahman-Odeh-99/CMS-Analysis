@@ -1,0 +1,214 @@
+configfile: "config.yaml"
+dir_path = config['dir_path']
+vol_path = dir_path+config['vol_path']
+shell_scripts_path = dir_path+config['shell_scripts_path']
+prepare_directory_outputs = [vol_path + s for s in config['prepare_directory_outputs']]
+recids = config['recids']
+
+
+'''
+wildcard_constraints:
+    dir_path = dir_path,
+    vol_path = vol_path,
+    shell_scripts_path = shell_scripts_path,
+    prepare_directory_outputs = '|'.join(prepare_directory_outputs),
+    recids = '|'.join(recids),
+    nFiles = "\d+",
+    nJobs = "\d+"
+'''
+
+#----------------------------------- Pull Images -----------------------------------
+def pullCommand(wildcards):
+    return f"""
+        docker pull ubuntu:latest
+        docker pull cernopendata/cernopendata-client:0.3.0
+        docker pull cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493
+        docker pull gitlab-registry.cern.ch/cms-cloud/python-vnc:latest
+        echo "Done Pulling !">>{dir_path}/pull.txt
+        """
+
+#----------------------------------- Prepare -----------------------------------
+def prepareCommand(wildcards):
+    return f"""
+        docker run \
+        --name ubuntu \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        ubuntu:latest \
+        bash {shell_scripts_path}/prepare-bash.sh {vol_path} && \
+        docker stop ubuntu && \
+        docker rm ubuntu
+        """
+        
+
+#----------------------------------- Filelist -----------------------------------
+def fileListCommand(wildcards):
+    vol_path = wildcards.vol_path
+    recid = wildcards.recid
+    return f"""
+        docker run \
+        --rm \
+        --name cernopendata-client-{recid} \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        cernopendata/cernopendata-client:0.3.0 \
+        get-file-locations --recid {recid} --protocol xrootd > {vol_path}/files_{recid}.txt;
+        """
+
+#----------------------------------- Runpoet -----------------------------------
+def runpoetCommand(wildcards):
+    recid = wildcards.recid
+    nFiles= 2
+    nJobs= 1
+    #{docker stop cmssw-{recid} && docker rm cmssw-{recid} && } 
+    return f"""
+        if ! docker stop cmssw-{recid} && ! docker rm cmssw-{recid}; then
+            echo "some_command returned an error"
+        else
+            docker stop cmssw-{recid} && docker rm cmssw-{recid}
+        fi && \
+        docker run \
+        --name cmssw-{recid} \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493 \
+        bash {shell_scripts_path}/runpoet-bash.sh {vol_path} {nFiles} {recid} {nJobs} && \
+        docker stop cmssw-{recid} && \
+        docker rm cmssw-{recid}
+        """
+        
+#----------------------------------- Flattentrees -----------------------------------
+def flattentreesCommand(wildcards):
+    recid = wildcards.recid
+    return f"""
+        docker run \
+        -i \
+        -d \
+        --name python-{recid} \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        gitlab-registry.cern.ch/cms-cloud/python-vnc && \
+        docker start python-{recid} && \
+        docker exec python-{recid} bash {shell_scripts_path}/flattentrees-bash.sh {vol_path} {recid} && \
+        docker stop python-{recid} && \
+        docker rm python-{recid}
+        """
+
+#----------------------------------- Prepare Coffea -----------------------------------
+def prepareCoffeaCommand(wildcards):
+    return f"""
+        docker run \
+        -i \
+        -d \
+        --name prepare-coffea \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        gitlab-registry.cern.ch/cms-cloud/python-vnc && \
+        docker start prepare-coffea && \
+        docker exec prepare-coffea bash {shell_scripts_path}/preparecoffea-bash.sh {vol_path} && \
+        docker stop prepare-coffea && \
+        docker rm prepare-coffea
+        """
+
+#----------------------------------- Run Coffea -----------------------------------
+def runCoffeaCommand(wildcards):
+    return f"""
+        docker run \
+        -i \
+        -d \
+        --name run-coffea \
+        --mount type=bind,source={dir_path},target={dir_path} \
+        gitlab-registry.cern.ch/cms-cloud/python-vnc && \
+        docker start run-coffea && \
+        docker exec run-coffea bash {vol_path}/code/commands.sh && \
+        docker stop run-coffea && \
+        docker rm run-coffea
+        """
+
+rule all:
+    input:
+        expand("{dir_path}/pull.txt", dir_path = dir_path),
+        expand(".mkdir.chkpnt"),
+        expand("{vol_path}/files_{recid}.txt", vol_path = vol_path, recid = recids),
+        expand("{vol_path}/output/{recid}/myoutput.root", vol_path = vol_path, recid = recids),
+        expand("{vol_path}/output/{recid}/myoutput_merged.root", vol_path = vol_path, recid = recids),
+        expand("{vol_path}/code/ntuples.json", vol_path = vol_path),
+        expand("{vol_path}/histograms.root", vol_path = vol_path),
+        
+
+rule pullCommand:
+    output:
+        "{dir_path}/pull.txt"
+    params:
+        bash_command = pullCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule prepareCommand:
+    input:
+        expand("{dir_path}/pull.txt", dir_path = dir_path)
+    output:
+        touch(".mkdir.chkpnt")
+    params:
+        bash_command = prepareCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule fileListCommand:
+    input:
+        ".mkdir.chkpnt"
+    output:
+        "{vol_path}/files_{recid}.txt"
+    params:
+        bash_command = fileListCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule runpoetCommand:
+    input:
+        expand("{vol_path}/files_{recid}.txt", vol_path = vol_path, recid = recids)
+    output:
+        "{vol_path}/output/{recid}/myoutput.root"
+    params:
+        bash_command = runpoetCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule flattentreesCommand:
+    input:
+        expand("{vol_path}/output/{recid}/myoutput.root", vol_path = vol_path, recid = recids)
+    output:
+        "{vol_path}/output/{recid}/myoutput_merged.root"
+    params:
+        bash_command = flattentreesCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule prepareCoffeaCommand:
+    input:
+        expand("{vol_path}/output/{recid}/myoutput_merged.root", vol_path = vol_path, recid = recids)
+    output:
+        "{vol_path}/code/ntuples.json"
+    params:
+        bash_command = prepareCoffeaCommand
+    shell:
+        """
+        {params.bash_command}
+        """
+
+rule runCoffeaCommand:
+    input:
+        expand("{vol_path}/code/ntuples.json", vol_path = vol_path)
+    output:
+        "{vol_path}/histograms.root"
+    params:
+        bash_command = runCoffeaCommand
+    shell:
+        """
+        {params.bash_command}
+        """

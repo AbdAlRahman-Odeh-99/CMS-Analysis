@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepareCommand
+	2
+
+[Sat Nov 12 12:53:56 2022]
+rule prepareCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/pull.txt
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/data, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/nevents, /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+    jobid: 2
+
+Waiting at most 30 seconds for missing files.
+MissingOutputException in line 199 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+Missing files after 30 seconds:
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/data
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/nevents
+/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-12T125356.314182.snakemake.log

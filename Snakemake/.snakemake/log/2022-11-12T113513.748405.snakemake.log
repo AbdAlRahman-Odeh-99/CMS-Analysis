@@ -1,0 +1,3 @@
+TypeError in line 11 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+join() argument after ** must be a mapping, not list
+  File "/home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile", line 11, in <module>

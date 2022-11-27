@@ -1,0 +1,11 @@
+[MFLOG|0|2022-10-21T20:58:49.222463Z|runtime|e0e70cf6-f42f-4cde-a9a9-cd1c634764d7]The command is: 
+[MFLOG|0|2022-10-21T20:58:50.826424Z|runtime|89fe6207-cb56-4404-91fe-284c77cd5c29] 
+[MFLOG|0|2022-10-21T20:58:50.828365Z|runtime|45b7b3cd-9fb8-4173-be9a-0f867b3a28f3]        docker run         -i         -d         --name run-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start run-coffea &&         docker exec run-coffea bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/commands.sh &&         docker stop run-coffea &&         docker rm run-coffea
+[MFLOG|0|2022-10-21T20:58:50.833279Z|runtime|9bac49cb-1bb3-4814-85fb-d7863b89bfd4]        
+[MFLOG|0|2022-10-21T20:58:50.834180Z|runtime|77842baf-235a-4378-af88-087b57a83c53]The output is: 
+[MFLOG|0|2022-10-21T20:58:50.835158Z|runtime|0fcdb05a-6ae3-4e23-a918-c35e446e8f4c] 
+[MFLOG|0|2022-10-21T20:58:50.836259Z|runtime|799209f7-b9ac-40de-9a82-1d011ad02fc9]Return Code: 125
+[MFLOG|0|2022-10-21T20:58:50.836754Z|runtime|1d2e9f1d-6e52-46e4-956b-ee5b5616b16d]The error is: 
+[MFLOG|0|2022-10-21T20:58:50.838092Z|runtime|473cf982-ce71-439b-83a5-ab4b8a4ab182] docker: Error response from daemon: Conflict. The container name "/run-coffea" is already in use by container "d8d770fbd85227b0d9d9612b83c1ca58f46408482804a6100c8553e650a2f157". You have to remove (or rename) that container to be able to reuse that name.
+[MFLOG|0|2022-10-21T20:58:50.838556Z|runtime|22b8a991-a502-4b48-b1af-bbb3cbb9e147]See 'docker run --help'.
+[MFLOG|0|2022-10-21T20:58:50.840025Z|runtime|7c1f7e7b-a762-49e3-82b9-0a9058a3f215]

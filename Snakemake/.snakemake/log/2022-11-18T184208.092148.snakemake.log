@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	flattentreesCommand
+	2
+
+[Fri Nov 18 18:42:08 2022]
+rule flattentreesCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root
+    jobid: 5
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol, recid=24119
+
+InputFunctionException in line 226 of /home/abd/Desktop/Work/Snakemake/CMS-Analysis/Snakefile:
+AttributeError: 'Wildcards' object has no attribute 'recids'
+Wildcards:
+vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+recid=24119

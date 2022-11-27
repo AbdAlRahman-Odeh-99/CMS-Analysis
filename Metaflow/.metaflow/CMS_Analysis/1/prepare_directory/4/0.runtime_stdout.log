@@ -1,0 +1,16 @@
+[MFLOG|0|2022-10-21T21:11:29.036533Z|runtime|15e3a9f3-140b-42c2-83c2-5872902288d8]The command is: 
+[MFLOG|0|2022-10-21T21:11:30.419925Z|runtime|3a0cd8e0-0d0b-4710-b1b8-0072c0063c4d] 
+[MFLOG|0|2022-10-21T21:11:30.420116Z|runtime|22521c39-9cdc-4bb0-9abe-b3d4cd36d4ca]        docker run         --rm         --name ubuntu         --mount type=bind,source=/home/abd/Desktop/Work/Metaflow/CMS-Analysis,target=/home/abd/Desktop/Work/Metaflow/CMS-Analysis         ubuntu:latest         bash /home/abd/Desktop/Work/Metaflow/CMS-Analysis/shell-scripts/Bash/prepare-bash.sh /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol &&         docker stop ubuntu &&         docker rm ubuntu
+[MFLOG|0|2022-10-21T21:11:30.420278Z|runtime|f1519fa0-8a6d-4e09-8852-67417d9d9538]        
+[MFLOG|0|2022-10-21T21:11:30.421127Z|runtime|a20d8758-fc2f-4d5c-a62e-cdb715d4687e]The output is: 
+[MFLOG|0|2022-10-21T21:11:30.421363Z|runtime|410d9fb5-44a4-47ee-96de-1998ebbc0e2a] pip install vector hist mplhep coffea
+[MFLOG|0|2022-10-21T21:11:30.421516Z|runtime|27cae33a-16ac-4fa3-990f-e62fadef942c]git clone https://github.com/cms-opendata-workshop/workshop2022-lesson-ttbarljetsanalysis-payload.git
+[MFLOG|0|2022-10-21T21:11:30.421647Z|runtime|b349fe20-2a88-4b09-87bc-e7d0e8c610f3]cd workshop2022-lesson-ttbarljetsanalysis-payload
+[MFLOG|0|2022-10-21T21:11:30.421775Z|runtime|6fd7c304-5e15-4a49-aae3-630c4f09956b]cp /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol/code/ntuples.json .
+[MFLOG|0|2022-10-21T21:11:30.421901Z|runtime|39a84f26-269c-46d4-ba42-1a0a23bafe17]python coffeaAnalysis_ttbarljets.py
+[MFLOG|0|2022-10-21T21:11:30.422020Z|runtime|db08d903-a1a8-45d7-a1ed-cbb088098ddf]mv *root /home/abd/Desktop/Work/Metaflow/CMS-Analysis/vol
+[MFLOG|0|2022-10-21T21:11:30.422140Z|runtime|154403d0-d263-441e-a1c2-205df61e9caa]
+[MFLOG|0|2022-10-21T21:11:30.422262Z|runtime|29f39cf2-12a6-4e83-bfb8-e72152d7956c]Return Code: 1
+[MFLOG|0|2022-10-21T21:11:30.422380Z|runtime|55fe3807-c259-4390-8898-b5d98dd6ea94]The error is: 
+[MFLOG|0|2022-10-21T21:11:30.422499Z|runtime|94dbc6a2-244d-4ec9-adcc-4e0594e2fcc6] Error response from daemon: No such container: ubuntu
+[MFLOG|0|2022-10-21T21:11:30.422619Z|runtime|9c9c44f2-76a6-4e24-a205-ac97384f5f5b]

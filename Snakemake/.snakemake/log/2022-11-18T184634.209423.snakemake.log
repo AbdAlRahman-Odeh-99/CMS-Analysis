@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	prepareCoffeaCommand
+	2
+
+[Fri Nov 18 18:46:34 2022]
+rule prepareCoffeaCommand:
+    input: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/output/24119/myoutput_merged.root
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    jobid: 6
+    wildcards: vol_path=/home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol
+
+[Fri Nov 18 18:46:35 2022]
+Error in rule prepareCoffeaCommand:
+    jobid: 6
+    output: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol/code/ntuples.json
+    shell:
+        
+        
+        docker run         -i         -d         --name prepare-coffea         --mount type=bind,source=/home/abd/Desktop/Work/Snakemake/CMS-Analysis,target=/home/abd/Desktop/Work/Snakemake/CMS-Analysis         gitlab-registry.cern.ch/cms-cloud/python-vnc &&         docker start prepare-coffea &&         docker exec prepare-coffea bash /home/abd/Desktop/Work/Snakemake/CMS-Analysis/shell-scripts/Bash/preparecoffea-bash.sh /home/abd/Desktop/Work/Snakemake/CMS-Analysis/vol &&         docker stop prepare-coffea &&         docker rm prepare-coffea
+        
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/abd/Desktop/Work/Snakemake/CMS-Analysis/.snakemake/log/2022-11-18T184634.209423.snakemake.log
